@@ -52,84 +52,109 @@ nav a:hover {
     background-color: #575757;
 }
 .sobre{
-   display: flex;
-   padding: 10px 400px 10px 400px;
-   margin-bottom: -140px;
+  display: flex;
+  padding: 10px 400px 10px 400px;
+  margin-bottom: -100px;
 }
 .sobre h2 {
-    text-align: center;
-    margin: 0px 0px 10px 0px;
+   text-align: center;
+   margin: 0px 0px 10px 0px;
 }
 .sobre p {
-        text-align: justify;
-        margin: 0 40px 10px 40px;
-        }
+       text-align: justify;
+       margin: 0 40px 10px 40px;
+       }
 .sobre img {
-    float: left;
-    width: 300px;
-    height: 400px;
-    display: inline-block;
-    padding: 10px;
-}
-.sobre ul {
-    list-style-type: none;
-    display: flex;
-    position: relative;
-    gap: 20px;
+   float: left;
+   width: 300px;
+   height: 400px;
+   display: inline-block;
+   padding: 10px;
 }
 
-.sobre ul li {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 8px 25px 0; color: #0000006e;
-    border-radius: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    font-size: 10px;
-    transition: .2s;
+.icones {
+  display: flex;
+  justify-content: center; 
+  ;}
+.icones .icon {
+  margin: 0 20px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.icones .icon span {
+  display: block;
+  height: 60px;
+  width: 60px;
+  color: #000;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.icones .icon span i {
+  line-height: 60px;
+  font-size: 25px;
+}
+.icones .icon .escrito {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background: #fff;
+  color: #fff;
+  padding: 10px 18px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 25px;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.icones .icon:hover .escrito {
+  top: -70px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.icon .escrito:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: inherit;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%) rotate(45deg);
+}
+.icones .icon:hover span {
+  color: #fff;
+}
+.icones .icon:hover span,
+.icones .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+.icones .instagram:hover span,
+.icones .instagram:hover .escrito {
+  background-image: linear-gradient(to right, rgb(255, 0, 4), yellow);
+}
+.icones .whatsapp:hover span,
+.icones .whatsapp:hover .escrito {
+  background-image: linear-gradient(to right, rgb(0, 255, 8), rgb(0, 159, 11));
+}
+.icones .linkedin:hover span,
+.icones .linkedin:hover .escrito {
+  background-image: linear-gradient(to right, rgb(4, 8, 236), rgb(6, 113, 155));
 }
 
-.sobre ul li:hover {
-    width: 180px;
-    }
-.sobre ul li span {
-    position: absolute;
-}
-
-.sobre ul li .icon {
-    color: #575757;
-    font-size: 2.2em;
-    transition: .2s;
-}
-.sobre ul li .text {
-    color: #ffffff;
-    font-size: 20px;
-    transform: scale(0);
-    transition: .2s;
-    transition-delay: .2;
-    }
-.sobre ul li:hover .text{
-    transform: scale(1);
-}
-
-.sobre ul li:hover .icon {
-    transform: scale(0);
-}
-
-.sobre ul li::before{
-    content: "";
-    position: absolute;
-    background-image: linear-gradient(45deg, var(--cor1), var(--cor2));
-    inset: 0;
-    opacity: 0;
-    border-radius: 60px;
-}
-.sobre ul li:hover::before{
-    opacity: 1;
-}
 
 .video {
     width: 100%;
@@ -145,8 +170,8 @@ nav a:hover {
     font-size: 50px;
     color: rgb(0, 0, 0);
     text-align: center;    
-    margin: -50px 0px -10px 0px;
-    margin-bottom: -70px;
+    margin: -30px 0px -10px 0px;
+    margin-bottom: -50px;
 } 
 
 .container {
