@@ -75,12 +75,12 @@ nav a:hover {
     list-style-type: none;
     display: flex;
     position: relative;
-    gap: 30px;
+    gap: 20px;
 }
 
-.sobre li {
-    width: 80px;
-    height: 80px;
+.sobre ul li {
+    width: 100px;
+    height: 100px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 8px 25px 0; color: #0000006e;
     border-radius: 80px;
@@ -91,16 +91,16 @@ nav a:hover {
     font-size: 10px;
     transition: .2s;
 }
-.sobre li:hover {
-    width: 100px;
-    height: 100px;
 
+.sobre ul li:hover {
+    width: 180px;
+    height: 100px;
 }
 .sobre span {
     position: absolute;
 }
 
-.sobre li .icon {
+.sobre ul li .icon {
     color: #575757;
     font-size: 1.5em;
     transition: .2s;
