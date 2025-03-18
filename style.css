@@ -94,33 +94,32 @@ nav a:hover {
 
 .sobre ul li:hover {
     width: 180px;
-    height: 100px;
-}
-.sobre span {
+    }
+.sobre ul li span {
     position: absolute;
 }
 
 .sobre ul li .icon {
     color: #575757;
-    font-size: 1.5em;
+    font-size: 2.2em;
     transition: .2s;
 }
-.sobre li .text {
+.sobre ul li .text {
     color: #ffffff;
-    font-size: 16px;
+    font-size: 20px;
     transform: scale(0);
     transition: .2s;
-    transition-delay: .1s;
-}
-.sobre li:hover .text{
+    transition-delay: .2;
+    }
+.sobre ul li:hover .text{
     transform: scale(1);
 }
 
-.sobre li:hover .icon {
+.sobre ul li:hover .icon {
     transform: scale(0);
 }
 
-.sobre li::before{
+.sobre ul li::before{
     content: "";
     position: absolute;
     background-image: linear-gradient(45deg, var(--cor1), var(--cor2));
@@ -128,7 +127,7 @@ nav a:hover {
     opacity: 0;
     border-radius: 60px;
 }
-.sobre li:hover::before{
+.sobre ul li:hover::before{
     opacity: 1;
 }
 
