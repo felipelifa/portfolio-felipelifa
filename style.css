@@ -436,13 +436,16 @@ nav a:hover {
 }
 
 .sobre h2 {
+  left: auto;
  margin: 0px 10px 0px 10px;
 }
 .sobre p {
+  left: auto;
      width: 100%;
      margin: 0 40px 0px 40px;
      }
 .sobre img {
+ left: auto;
  width: 300px;
  height: 400px;
  padding: 10px;
