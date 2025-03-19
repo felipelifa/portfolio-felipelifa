@@ -54,7 +54,7 @@ nav a:hover {
 .sobre{
 display: flex;
 padding: 10px 400px 10px 400px;
-margin-bottom: -60px;
+margin-bottom: 0px;
 }
 .sobre h2 {
  text-align: center;
