@@ -401,9 +401,11 @@ footer {
 
 @media screen and (max-width: 1020px)
 {
-  body {
+  html, body {
     overflow-x: hidden;
+    width: 100%;
   }
+  
   header h1 {
     font-size: 40px;
   }
@@ -422,11 +424,15 @@ footer {
     text-align: center;
     display: block;
   }
-  
-  .sobre {
+  .sobre, .container, .cardpart {
+    max-width: 100%;
     width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .sobre {
     padding: 20px;
-    max-width: 1200px;
     margin: 0 auto;
   }
   
@@ -475,9 +481,10 @@ footer {
   .meusprojetos h2{
         font-size: 40px;        
   }
-  .meusprojetos h3{
+  .meusprojetos h3 {
     font-size: 20px;
-}
+    margin-bottom: 5px;
+  }
   .cardpart {
     flex-direction: column;
     height: auto;
@@ -494,6 +501,12 @@ footer {
     padding: 20px;
   }
   
+  .cardpart {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    width: 100%;
+  }
   .card-titulo {
     font-size: 25px;
     margin: 0 0 15px 0;
