@@ -359,7 +359,7 @@ footer {
   
   .video {
     width: 100%;
-    height: 40vh; 
+    height: 40px; 
     overflow: hidden;
     display: flex;
     justify-content: center;
