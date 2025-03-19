@@ -307,13 +307,13 @@ footer {
   
     /* Ajustando o layout de navegação */
     nav {
-      flex-direction: column;
+      flex-direction: flex;
       text-align: center;
     }
     nav a {
       padding: 10px 15px;
       font-size: 16px;
-    }
+          }
   
     /* Ajustando a área "sobre" */
     .sobre {
