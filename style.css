@@ -365,7 +365,7 @@ footer {
   
     .card {
       width: 90%; /* Manter uma largura razoável */
-      height: 450px; /* Maior altura para um formato mais vertical */
+      height: 50vh; /* Maior altura para um formato mais vertical */
       margin-bottom: 20px;
       border-radius: 20px;
       overflow: hidden;
