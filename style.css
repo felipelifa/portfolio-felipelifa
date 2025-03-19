@@ -155,10 +155,11 @@ background-image: linear-gradient(to right, rgb(4, 8, 236), rgb(6, 113, 155));
 }
 
 
-.video {
+.alturavideo video {
   width: 100%;
-  max-height: 30px;
-}
+  height: 10vw;
+  object-fit: cover;
+      }
 
 .skill {
   font-size: 50px;
