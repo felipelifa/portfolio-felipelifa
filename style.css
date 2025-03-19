@@ -437,6 +437,11 @@ footer {
   }
 .container{
   flex-direction: column;
+  padding: 10px
+}
+.caixa {
+  width: 100%;
+  margin-bottom: 15px;
 }
   .meusprojetos h3 {
     font-size: 20px;
