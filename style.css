@@ -378,6 +378,7 @@ footer {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
+    margin-left: 30px;
 }
 
 .caixa {
