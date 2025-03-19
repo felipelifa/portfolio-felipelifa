@@ -369,28 +369,28 @@ footer {
     height: auto;
     padding: 0;}
   
-  .container {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
+    .container {
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
+      padding: 20px;
+      scroll-snap-type: x mandatory; 
+      -webkit-overflow-scrolling: touch; 
     }
-
-.caixa {
-    min-width: 100%;
-    scroll-snap-align: start;
-    flex-shrink: 0;
-    box-sizing: border-box;
-    padding: 20px;
-}
-
-.container::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-}
-
-.container::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 10px;
-}
-}
+  
+   
+    .caixa {
+      min-width: 100%; 
+      scroll-snap-align: start; 
+      box-sizing: border-box;
+      padding: 20px;
+    }
+  
+     .caixa h3 {
+      font-size: 18px;
+    }
+  
+    .caixa p {
+      font-size: 14px;
+    }
+  }
