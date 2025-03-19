@@ -540,9 +540,8 @@ background-image: linear-gradient(to right, rgb(4, 8, 236), rgb(6, 113, 155));
 
 .alturavideo video {
   width: 100%;
-  height: 25vw;
-  object-fit: cover;
-      }
+  height: 23vw;
+  }
 
 .skill {
   font-size: 50px;
