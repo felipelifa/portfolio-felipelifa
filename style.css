@@ -404,127 +404,76 @@ footer {
   html, body {
     overflow-x: hidden;
     width: 100%;
-    text-align: center;
   }
 
-  header h1 {
-    font-size: 40px;
-    text-align: center;
-  }
-  
-  header h2 {
-    font-size: 30px;
-    text-align: center;
-  }
-  
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  nav a {
-    padding: 10px;
-    text-align: center;
-    display: block;
-  }
-  .sobre, .container, .cardpart {
+  /* Ajusta a largura de todos os containers principais para não ficarem cortados ou muito grandes */
+  .sobre, .container, .cardpart, .meusprojetos, .icones, .video, .skill {
     max-width: 100%;
     width: 100%;
     padding: 0 10px;
     box-sizing: border-box;
   }
 
-  .sobre {
-    padding: 20px;
-    margin: 0 auto;
+  /* Ajusta a largura dos cards */
+  .card {
+    width: 100%;
+    max-width: 90%;
   }
-  
+
+  /* Ajusta os espaçamentos das seções para ficarem consistentes */
+  .sobre {
+    padding: 20px 10px;
+    margin-bottom: 0;
+  }
+
   .sobre img {
     width: 100%;
     height: auto;
     padding: 0;
   }
-  
-  .sobre p {
-    margin: 10px;
+
+  .skill {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 30px;
     text-align: center;
   }
-  
-  .icones {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .icones .icon {
-    margin: 10px 0;
-  }
-  
-  .video {
-    height: 30vh;
-  }
-  
-  .skill {
-       font-size: 30px;
-  }
-  
-  .container {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .caixa {
-    max-width: 95%;
-  }
-  
+
   .meusprojetos {
     margin-bottom: 0px;
     font-size: 30px;
   }
-  .meusprojetos h2{
-        font-size: 40px;        
-  }
+
   .meusprojetos h3 {
     font-size: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
+
+  /* Ajusta a margem entre os cards e a seção Passe o Mouse */
+  .meusprojetos h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
   .cardpart {
     flex-direction: column;
     height: auto;
     padding: 20px;
     width: 100%;
   }
-  
-  .card {
-    width: 90%;
-    height: auto;
+
+  /* Ajusta a área do vídeo */
+  .video {
+    height: 30vh;
+    margin-bottom: 0;
   }
-  
-  .card-body {
-    padding: 20px;
-  }
-  
-  .cardpart {
-    flex-direction: column;
-    height: auto;
-    padding: 20px;
+
+  /* Ajusta o comportamento das imagens */
+  .sobre img {
     width: 100%;
-  }
-  .card-titulo {
-    font-size: 25px;
-    margin: 0 0 15px 0;
-  }
-  
-  .card-sub-titulo {
-    font-size: 18px;
-  }
-  
-  .card-info {
-    font-size: 14px;
-  }
-  
-  footer {
-    padding: 20px;
+    height: auto;
+    padding: 0;
   }
 }
+
   
