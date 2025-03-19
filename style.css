@@ -329,7 +329,7 @@ footer {
   
     /* Ajustando a seção de ícones */
     .icones {
-      flex-direction: column;
+      flex-direction: flex;
       align-items: center;
     }
     .icones .icon {
@@ -338,7 +338,7 @@ footer {
   
     /* Ajustando a altura do vídeo */
     .alturavideo video {
-      height: 50vw;
+      height: 20vw;
     }
   
     /* Ajustando a exibição das caixas e containers */
@@ -354,16 +354,16 @@ footer {
     /* Ajustando a seção de projetos */
     .meusprojetos {
       font-size: 30px;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
     }
     .cardpart {
       flex-direction: column;
       padding: 10px;
-      width: 100%;
+      width: 90%;
     }
     .card {
-      width: 100%;
-      height: auto;
+      width: 90%;
+      height: 50px;
       margin-bottom: 20px;
     }
     .card-img {
@@ -382,5 +382,3 @@ footer {
       padding: 20px;
     }
   }
-  
-}
