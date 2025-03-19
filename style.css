@@ -415,9 +415,8 @@ footer {
   .sobre {
     width: 100%;
     padding: 20px 10px;
-    margin-bottom: 0;
-    line-height: 80px;
-  }
+    margin-bottom: -60px;
+      }
 
   .sobre img {
     width: 90%;
