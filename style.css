@@ -423,11 +423,7 @@ footer {
     height: auto;
     padding: 0;
   }
-  .icones {
-    margin-bottom: -50px;
-
-  }
-
+  
   .skill {
     margin-top: 0;
     margin-bottom: 0;
@@ -435,7 +431,7 @@ footer {
     text-align: center;
   }
   .skill h2 {
-    margin-top: -70px;
+    margin-top: 70px;
   }
 
   .meusprojetos {
