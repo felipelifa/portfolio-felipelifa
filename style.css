@@ -54,7 +54,7 @@ nav a:hover {
 .sobre{
 display: flex;
 padding: 10px 400px 10px 400px;
-margin-bottom: 20px;
+margin-bottom: 0px;
 }
 .sobre h2 {
  text-align: center;
@@ -162,7 +162,7 @@ background-image: linear-gradient(to right, rgb(4, 8, 236), rgb(6, 113, 155));
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;  
+  margin-top: 50px;  
 }
 
 .skill {
