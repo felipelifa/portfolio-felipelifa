@@ -423,8 +423,9 @@ footer {
   .sobre {
     flex-direction: column;
     padding: 20px;
-    margin-bottom: 0;
+    margin-bottom: -50px;
     width: 100%;
+
   }
   
   .sobre img {
@@ -452,8 +453,7 @@ footer {
   }
   
   .skill {
-    margin-top: -50px;
-    font-size: 30px;
+       font-size: 30px;
   }
   
   .container {
@@ -467,11 +467,11 @@ footer {
   }
   
   .meusprojetos {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     font-size: 30px;
   }
   .meusprojetos h2{
-        font-size: 40px;
+        font-size: 40px;        
   }
   .meusprojetos h3{
     font-size: 20px;
