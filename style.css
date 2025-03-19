@@ -298,3 +298,78 @@ footer {
   
   text-align: center;   
 }
+
+@media screen and (max-width: 1020px){
+
+  .html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .sobre, .container, .cardpart, .meusprojetos, .icones, .video, .skill {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  /* Ajusta a largura dos cards */
+  .card {
+    width: 100%;
+    
+  }
+
+  /* Ajusta os espaçamentos das seções para ficarem consistentes */
+  .sobre {
+    padding: 20px 10px;
+    margin-bottom: 0;
+  }
+
+  .sobre img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .skill {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .meusprojetos {
+    margin-bottom: 0px;
+    font-size: 30px;
+  }
+
+  .meusprojetos h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  /* Ajusta a margem entre os cards e a seção Passe o Mouse */
+  .meusprojetos h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .cardpart {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    width: 100%;
+  }
+
+  /* Ajusta a área do vídeo */
+  .video {
+    height: 30vh;
+    margin-bottom: 0;
+  }
+
+  /* Ajusta o comportamento das imagens */
+  .sobre img {
+    width: 90%;
+    height: auto;
+    padding: 0;}
+  }    
