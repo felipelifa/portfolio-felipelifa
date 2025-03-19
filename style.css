@@ -64,13 +64,6 @@ nav a:hover {
        text-align: justify;
        margin: 0 40px 10px 40px;
        }
-.sobre img {
-   float: left;
-   width: 300px;
-   height: 400px;
-   display: inline-block;
-   padding: 10px;
-}
 
 .icones {
   display: flex;
@@ -169,8 +162,7 @@ margin-bottom: -100px;
  float: left;
  width: 300px;
  height: 400px;
- display: inline-block;
- padding: 10px;
+  padding: 10px;
 }
 
 .icones {
