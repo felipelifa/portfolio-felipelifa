@@ -401,6 +401,9 @@ footer {
 
 @media screen and (max-width: 1020px)
 {
+  body {
+    overflow-x: hidden;
+  }
   header h1 {
     font-size: 40px;
   }
@@ -421,11 +424,10 @@ footer {
   }
   
   .sobre {
-    flex-direction: column;
-    padding: 20px;
-    margin-bottom: -50px;
     width: 100%;
-
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
   
   .sobre img {
