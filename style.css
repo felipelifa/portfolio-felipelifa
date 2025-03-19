@@ -434,6 +434,9 @@ footer {
     font-size: 30px;
     text-align: center;
   }
+  .skill h2 {
+    margin-top: -70px;
+  }
 
   .meusprojetos {
     margin-bottom: 0px;
