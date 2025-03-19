@@ -295,7 +295,7 @@ footer {
   text-align: center;   
 }
 
-@media screen and (max-width: 1020px){
+
   @media screen and (max-width: 768px) {
     /* Ajustando o Header */
     header h1 {
@@ -419,4 +419,4 @@ footer {
       font-size: 14px;
       padding: 20px;
     }
-  }}
+  }
