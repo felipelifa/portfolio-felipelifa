@@ -466,9 +466,13 @@ footer {
   }
   
   .meusprojetos {
+    margin-top: 30px;
+    margin-bottom: 30px;
     font-size: 30px;
   }
-  
+  .meusprojetos h2{
+        font-size: 20px;
+  }
   .cardpart {
     flex-direction: column;
     height: auto;
