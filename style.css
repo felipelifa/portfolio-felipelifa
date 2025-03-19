@@ -353,17 +353,7 @@ footer {
     padding: 20px;
     width: 90%;
   }
-  .video {
-    width: 100%;
-    height: 50vh !important;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -50px; 
-  }
-
-  
+    
   .sobre img {
     width: 90%;
     height: auto;
