@@ -405,29 +405,21 @@ footer {
     overflow-x: hidden;
     width: 100%;
   }
-
-  /* Ajusta a largura de todos os containers principais para não ficarem cortados ou muito grandes */
   .sobre, .container, .cardpart, .meusprojetos, .icones, .video, .skill {
     max-width: 100%;
     width: 100%;
     padding: 0 10px;
     box-sizing: border-box;
   }
-
-  /* Ajusta a largura dos cards */
-  .card {
-    width: 100%;
-    max-width: 90%;
-  }
-
   /* Ajusta os espaçamentos das seções para ficarem consistentes */
   .sobre {
+    width: 100%;
     padding: 20px 10px;
     margin-bottom: 0;
   }
 
   .sobre img {
-    width: 100%;
+    width: 90%;
     height: auto;
     padding: 0;
   }
@@ -459,7 +451,7 @@ footer {
     flex-direction: column;
     height: auto;
     padding: 20px;
-    width: 100%;
+    width: 90%;
   }
 
   /* Ajusta a área do vídeo */
@@ -470,10 +462,9 @@ footer {
 
   /* Ajusta o comportamento das imagens */
   .sobre img {
-    width: 100%;
-    height: auto;
-    padding: 0;
-  }
+    width: 90%;
+    padding: 5px;
+    }
 }
 
   
