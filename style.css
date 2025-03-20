@@ -309,7 +309,7 @@ footer {
 }
 
 /* Media Queries para mobile */
-@media (max-width: 768px) {
+@media (max-width: 1020px) {
   .sobre {
     display: flex;
     flex-direction: column; /* Alinha o conteúdo em coluna */
@@ -360,49 +360,3 @@ footer {
   }
 }
 
-/* Media Queries para mobile pequeno */
-@media (max-width: 480px) {
-  .sobre {
-    display: block;  /* Alinha tudo em bloco */
-    text-align: center; /* Centraliza o conteúdo */
-  }
-
-  .sobre img {
-    width: 90%;  /* Ajuste para a imagem ocupar um pouco menos de largura */
-    height: auto;
-    margin: 0 auto;  /* Centraliza a imagem */
-    padding: 10px 0;
-  }
-
-  .sobre p {
-    text-align: justify;
-    margin: 0 10px;
-    font-size: 13px;  /* Reduz o tamanho da fonte para dispositivos menores */
-  }
-
-  .icones .icon span {
-    height: 50px;
-    width: 50px;
-  }
-
-  .icones .icon span i {
-    font-size: 20px;
-  }
-
-  .icones .icon .escrito {
-    font-size: 16px;
-  }
-
-  .container-wrapper {
-    padding: 5px;
-  }
-
-  .containerr {
-    width: 100%;
-    height: auto;
-  }
-
-  .card {
-    height: 250px;
-  }
-}
