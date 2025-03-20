@@ -310,6 +310,13 @@ footer {
 
 
 @media (max-width: 1020px) {
+.header h1 {
+  font-size: 30px;
+}
+.header h2 {
+  font-size: 20px;
+}
+
   .sobre {
     display: flex;
     flex-direction: column; 
