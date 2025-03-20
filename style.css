@@ -203,13 +203,13 @@ background-color: #000000;
 color: white;
 text-align: center;
 font-size: 50px;
-margin-bottom: -180px;
 }
 
 .meusprojetos h3 {
 font-size: 20px;
 color: #575757;
 font-weight: 600;
+margin-bottom: -30px;
 }
 
 .cardpart {
@@ -224,11 +224,11 @@ font-weight: 600;
 
 .card {
   width: 420px;
-  height: 600px;
+  height: 60vh;
   border-radius: 20px;
   overflow: hidden;
-  border: 8px solid #fff;
-  position: relative;
+  border: 4px solid #fff;
+  position: center;
   cursor: pointer;
 }
 
@@ -255,7 +255,7 @@ font-weight: 600;
   flex-direction: column;
   justify-content: center;
   transform: translateX(-100%);
-  transition: transform 2s ease-in-out;
+  transition: 2s ease-in-out;
     }
 
 .card:hover .card-body {
@@ -365,7 +365,7 @@ footer {
   
     .card {
       width: 90%; /* Manter uma largura razoável */
-      height: 50vh; /* Maior altura para um formato mais vertical */
+      height: 500vh; /* Maior altura para um formato mais vertical */
       margin-bottom: 20px;
       border-radius: 20px;
       overflow: hidden;
