@@ -310,40 +310,24 @@ footer {
 
 /* Media Queries para mobile */
 @media (max-width: 768px) {
-  header h1 {
-    font-size: 40px;
-  }
-
-  header h2 {
-    font-size: 30px;
-  }
-
-  nav {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  nav a {
-    padding: 10px 15px;
-  }
-
   .sobre {
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding: 10px;
+    text-align: center;  /* Para centralizar o texto */
   }
 
   .sobre img {
     width: 100%;
     height: auto;
     padding: 10px 0;
+    margin: 0 auto;  /* Centralizar a imagem */
   }
 
-  .icones {
-    flex-direction: column;
-  }
-
-  .icones .icon {
-    margin: 10px 0;
+  .sobre p {
+    text-align: justify;
+    margin: 0 20px;  /* Ajuste da margem para não sair do conteúdo */
+    font-size: 14px;
   }
 
   .caixa {
@@ -373,21 +357,22 @@ footer {
 
 /* Media Queries para mobile pequeno */
 @media (max-width: 480px) {
-  header h1 {
-    font-size: 30px;
-  }
-
-  header h2 {
-    font-size: 20px;
-  }
-
-  nav a {
-    padding: 8px 10px;
+  .sobre {
+    display: block;  /* Mudando de flex para block para garantir que o conteúdo ocupe toda a largura */
+    text-align: center; /* Centralizando o conteúdo */
   }
 
   .sobre img {
-    width: 100%;
+    width: 80%;  /* Ajuste para a imagem ocupar menos largura */
     height: auto;
+    padding: 10px 0;
+    margin: 0 auto;  /* Centralizando a imagem */
+  }
+
+  .sobre p {
+    text-align: justify;
+    margin: 0 10px;
+    font-size: 13px; /* Reduzindo um pouco o tamanho da fonte */
   }
 
   .icones .icon span {
