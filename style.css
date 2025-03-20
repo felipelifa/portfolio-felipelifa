@@ -325,7 +325,7 @@ footer {
     width: 80%; /* Ajusta a largura da imagem para o tamanho adequado */
     height: auto; 
     margin: 10px 0;  /* Ajusta a margem para a imagem */
-    padding: 0;
+    padding: 10px;
   }
 
   .sobre p {
