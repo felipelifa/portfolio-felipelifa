@@ -214,79 +214,143 @@ background-image: linear-gradient(to right, rgb(4, 8, 236), rgb(6, 113, 155));
   font-size: 18px;
   text-align: center;
   color: #666;
-  margin-bottom: -80px;
-}
-.card {
-  width: 90%;
-  max-width: 350px; /* Mantém um tamanho bom no desktop */
-  height: 450px; /* Mantém a altura estilo story */
-  perspective: 1000px; /* Adiciona efeito 3D */
-  position: relative;
-  cursor: pointer;
-}
-
-.card img {
-  display: none; /* Oculta a imagem, pois agora a frente do card terá o fundo */
-}
-
-.card-body {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  backface-visibility: hidden; /* Esconde o verso até virar */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-}
-
-.card-front {
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-  position: absolute;
-  backface-visibility: hidden;
-}
-
-.card:nth-child(1) .card-front {
-  background-image: url('Arquivos/1.png'); /* Imagem do primeiro card */
-}
-
-.card:nth-child(2) .card-front {
-  background-image: url('Arquivos/2.png'); /* Imagem do segundo card */
-}
-
-.card:nth-child(3) .card-front {
-  background-image: url('Arquivos/3.png'); /* Imagem do terceiro card */
-}
-
-.card-back {
-  background: rgba(0, 0, 0, 0.9);
-  color: white;
-  transform: rotateY(180deg);
-}
-
-.card:hover .card-front {
-  transform: rotateY(180deg);
-}
-
-.card:hover .card-back {
-  transform: rotateY(0);
+  margin-bottom: -80px;}
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #444;
 }
 
 .card {
-  transform-style: preserve-3d;
-  transition: transform 0.6s;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(#333, #333);
+    transition: all .5s;
 }
 
 .card:hover {
-  transform: rotateY(180deg);
+    background-image: linear-gradient(#672abf, #380e74);
+}
+
+.card .img1 {
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-image: url('Arquivos/1.png');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+
+.card .img2 {
+  width: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-image: url('Arquivos/2.png');
+  background-size: cover;
+  background-position: center;
+  transition: all .5s;
+  z-index: 2;
+  position: relative;
+  opacity: .8;
+}
+
+.card .img3 {
+  width: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-image: url('Arquivos/3.png');
+  background-size: cover;
+  background-position: center;
+  transition: all .5s;
+  z-index: 2;
+  position: relative;
+  opacity: .8;
+}
+
+.card .img span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 100;
+    font-style: italic;
+    transition: all .5s;
+}
+
+.card:hover .img {
+    width: 430px;
+    opacity: 1;
+}
+
+.card:hover .img span {
+    font-size: 28px;
+}
+
+.card .conteudocard {
+    padding: 0px 20px;
+    height: 0;
+    opacity: 0;
+    transition: all .5s;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translateY(30px);
+}
+
+.card:hover .conteudocard {
+    height: 260px;
+    padding: 20px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card .conteudocard p {
+    margin: 0;
+}
+
+.card .conteudocard .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card .conteudocard .desc {
+    font-size: 14px;
+    font-weight: 100;
+    opacity: .8;
+    margin-top: 8px;
+}
+
+.card .arrow {
+    padding: 15px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card:hover .arrow {
+    transform: rotate(0);
+}
+
+.card .arrow span {
+    font-size: 24px;
 }
 
 footer {
@@ -355,25 +419,34 @@ footer {
     .meusprojetos {
       font-size: 30px;
       margin-bottom: 30px;
-    }
-    .card {
-      max-width: 280px; /* Ajusta para telas menores */
-      height: 400px; /* Ajusta a altura */
-    }
-    
-    .card-body {
-      padding: 15px;
-    }
-    
-    .card-titulo {
-      font-size: 20px;
-    }
-    .card-sub-titulo {
-      font-size: 16px;
-    }
-    .card-info {
-      font-size: 14px;
-    }
+      @media (max-width: 768px)}
+
+        .cardpart {
+          flex-direction: column; /* Empilha os cards */
+          align-items: center;
+        }
+      
+        .card {
+          width: 90%; /* Ajusta o tamanho */
+          max-width: 280px;
+          height: 400px;
+        }
+      
+        .card-back {
+          padding: 15px;
+        }
+      
+        .card-titulo {
+          font-size: 20px;
+        }
+      
+        .card-sub-titulo {
+          font-size: 16px;
+        }
+      
+        .card-info {
+          font-size: 14px;
+        }
     footer {
       font-size: 14px;
       padding: 20px;
