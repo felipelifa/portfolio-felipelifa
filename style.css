@@ -322,6 +322,7 @@ footer {
     width: 100%;
     justify-content: center;
     display: flex;
+    height: 50vh;
   }
 
   .caixa {
