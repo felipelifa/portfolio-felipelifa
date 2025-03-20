@@ -159,7 +159,7 @@ background-image: linear-gradient(to right, rgb(4, 8, 236), rgb(6, 113, 155));
   width: 100%;
   height: 17vw;
   object-fit: cover;
-  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.815), 0 4px 20px rgba(0, 0, 0, 0.911);
+  box-shadow: 0 -10px 10px rgb(0, 0, 0), 0 25px 20px rgba(0, 0, 0, 0.911);
 }
 
 .skill {
@@ -363,10 +363,10 @@ footer {
       width: 100%;
       gap: 20px;
     }
-  
+    
     .card {
       width: 90%; /* Manter uma largura razoável */
-      height: 500vh; /* Maior altura para um formato mais vertical */
+      height: 80vh; /* Ajusta a altura para mais vertical em telas maiores */
       margin-bottom: 20px;
       border-radius: 20px;
       overflow: hidden;
@@ -375,14 +375,14 @@ footer {
       cursor: pointer;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Adiciona sombra para destacar */
     }
-  
+    
     .card-img {
       width: 100%;
-      height: 100%; /* Redefine a altura da imagem para 70% do card */
+      height: 50%; /* Ajusta a altura da imagem para ser metade do card */
       object-fit: cover; /* Faz a imagem se ajustar bem */
       border-bottom: 8px solid #fff; /* Separação visual entre a imagem e o corpo do card */
     }
-  
+    
     .card-body {
       padding: 15px;
       display: flex;
@@ -391,33 +391,60 @@ footer {
       color: #fff;
       background: rgba(0, 0, 0, 0.6); /* Fundo escuro e transparente para o texto */
       backdrop-filter: blur(10px);
-      height: 100%; /* Ajuste para que a parte do corpo ocupe menos espaço */
+      height: 50%; /* Ajuste para que a parte do corpo ocupe menos espaço */
     }
-  
+    
     .card-titulo, .card-sub-titulo, .card-info {
       font-size: 16px;
       color: #fff;
     }
-  
+    
     .card-titulo {
       font-size: 22px; /* Um tamanho de fonte maior para o título */
       font-weight: 600;
       margin-bottom: 10px;
     }
-  
+    
     .card-sub-titulo {
       font-size: 18px;
       font-weight: 200;
       margin-bottom: 10px;
     }
-  
+    
     .card-info {
       font-size: 14px;
       line-height: 1.5;
     }
-      /* Ajustando o Footer */
+    
+    /* Media Query para telas menores (como celulares) */
+          /* Ajustando o Footer */
     footer {
       font-size: 14px;
       padding: 20px;
+    }
+  }
+  @media (max-width: 768px) {
+    .card {
+      height: 90vh; /* Aumenta a altura do card para maior formato vertical */
+    }
+  
+    .card-img {
+      height: 60%; /* A imagem vai ocupar mais espaço no celular */
+    }
+  
+    .card-body {
+      height: 40%; /* Ajuste para o conteúdo ocupar um pouco menos de espaço */
+    }
+  
+    .card-titulo {
+      font-size: 20px; /* Reduz um pouco o tamanho do título para telas menores */
+    }
+  
+    .card-sub-titulo {
+      font-size: 16px; /* Reduz o tamanho do subtítulo */
+    }
+  
+    .card-info {
+      font-size: 12px; /* Ajusta o tamanho da fonte da informação */
     }
   }
