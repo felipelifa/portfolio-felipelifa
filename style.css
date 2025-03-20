@@ -312,22 +312,23 @@ footer {
 @media (max-width: 768px) {
   .sobre {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Alinha o conteúdo em coluna */
+    align-items: center; /* Garante que o conteúdo seja centralizado */
     padding: 10px;
-    text-align: center;  /* Para centralizar o texto */
+    text-align: center;  /* Centraliza o texto */
   }
 
   .sobre img {
-    width: 100%;
-    height: auto;
+    width: 80%; /* Ajusta a largura da imagem para o tamanho adequado */
+    height: auto; 
+    margin: 0 auto;  /* Garante que a imagem fique centralizada */
     padding: 10px 0;
-    margin: 0 auto;  /* Centralizar a imagem */
   }
 
   .sobre p {
     text-align: justify;
-    margin: 0 20px;  /* Ajuste da margem para não sair do conteúdo */
-    font-size: 14px;
+    margin: 10px;  /* Ajuste das margens para evitar que o texto saia do conteúdo */
+    font-size: 14px;  /* Ajuste do tamanho da fonte */
   }
 
   .caixa {
@@ -358,21 +359,21 @@ footer {
 /* Media Queries para mobile pequeno */
 @media (max-width: 480px) {
   .sobre {
-    display: block;  /* Mudando de flex para block para garantir que o conteúdo ocupe toda a largura */
-    text-align: center; /* Centralizando o conteúdo */
+    display: block;  /* Alinha tudo em bloco */
+    text-align: center; /* Centraliza o conteúdo */
   }
 
   .sobre img {
-    width: 80%;  /* Ajuste para a imagem ocupar menos largura */
+    width: 90%;  /* Ajuste para a imagem ocupar um pouco menos de largura */
     height: auto;
+    margin: 0 auto;  /* Centraliza a imagem */
     padding: 10px 0;
-    margin: 0 auto;  /* Centralizando a imagem */
   }
 
   .sobre p {
     text-align: justify;
     margin: 0 10px;
-    font-size: 13px; /* Reduzindo um pouco o tamanho da fonte */
+    font-size: 13px;  /* Reduz o tamanho da fonte para dispositivos menores */
   }
 
   .icones .icon span {
@@ -401,3 +402,4 @@ footer {
     height: 250px;
   }
 }
+
