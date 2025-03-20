@@ -316,13 +316,16 @@ footer {
     align-items: center; /* Garante que o conteúdo seja centralizado */
     padding: 10px;
     text-align: center;  /* Centraliza o texto */
+    margin: 0 auto; /* Garante que o container não ultrapasse a tela */
+    width: 100%;  /* Garante que o container ocupe 100% da largura da tela */
+    box-sizing: border-box; /* Inclui padding nas dimensões do container */
   }
 
   .sobre img {
     width: 80%; /* Ajusta a largura da imagem para o tamanho adequado */
     height: auto; 
-    margin: 0 auto;  /* Garante que a imagem fique centralizada */
-    padding: 10px 0;
+    margin: 10px 0;  /* Ajusta a margem para a imagem */
+    padding: 0;
   }
 
   .sobre p {
@@ -335,6 +338,7 @@ footer {
     padding: 15px;
     width: 100%;
     max-width: 100%;
+    margin: 0 auto; /* Centraliza as caixas */
   }
 
   .container-wrapper {
@@ -402,4 +406,3 @@ footer {
     height: 250px;
   }
 }
-
