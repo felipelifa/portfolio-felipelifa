@@ -319,7 +319,7 @@ footer {
     flex-direction: column;
     gap: 15px;
     padding: 15px;
-    width: 100%;
+    width: 40vh;
   }
 
   .caixa {
@@ -336,6 +336,7 @@ footer {
   }
 
   .container-wrapper {
+    align-items: center;
     flex-direction: column;
     gap: 20px;
   }
