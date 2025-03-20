@@ -215,7 +215,8 @@ background-image: linear-gradient(to right, rgb(4, 8, 236), rgb(6, 113, 155));
   text-align: center;
   color: #666;
   margin-bottom: -80px;}
-  .container {
+
+.containerdois {
     width: 100%;
     min-height: 100vh;
     display: flex;
