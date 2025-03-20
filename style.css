@@ -249,7 +249,7 @@ background-image: linear-gradient(to right, rgb(4, 8, 236), rgb(6, 113, 155));
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 50vh;
     background-image: url('Arquivos/1.png');
     background-size: cover;
     background-position: center;
@@ -308,7 +308,7 @@ background-image: linear-gradient(to right, rgb(4, 8, 236), rgb(6, 113, 155));
 
 .card .conteudocard {
     padding: 0px 20px;
-    height: 0;
+    height: 40vh;
     opacity: 0;
     transition: all .5s;
     position: relative;
@@ -318,7 +318,7 @@ background-image: linear-gradient(to right, rgb(4, 8, 236), rgb(6, 113, 155));
 }
 
 .card:hover .conteudocard {
-    height: 260px;
+    height: 50vh;
     padding: 20px;
     opacity: 1;
     transform: translateY(0);
