@@ -358,5 +358,28 @@ footer {
   footer {
     padding: 20px;
   }
+
+.skill {
+  font-size: 40px;
+  margin-top: -40px;
+  margin-bottom: -20px;
 }
 
+.container {
+  flex-direction: column;
+  gap: 15px;
+}
+
+.caixa {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.caixa h3 {
+  font-size: 18px;
+}
+
+.caixa p {
+  font-size: 14px;
+}
+}
