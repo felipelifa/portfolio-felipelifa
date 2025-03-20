@@ -351,16 +351,19 @@ footer {
     }
     .card {
       width: 90%;
-      height: 90vh; /* Aumenta a altura do card para dispositivos móveis */
+      height: 75vh; /* Aumenta a altura do card para dispositivos móveis */
     }
   
     .card-img {
-      height: 60%; /* A imagem vai ocupar 60% da altura do card */
+      height: 100%; /* A imagem vai ocupar 60% da altura do card */
     }
   
     .card-body {
       padding: 15px;
-      height: 40%; /* O conteúdo ocupa o restante do espaço no celular */
+      height: 35%; 
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
     }
   
     .card-titulo {
@@ -369,10 +372,12 @@ footer {
   
     .card-sub-titulo {
       font-size: 16px;
+      
     }
   
     .card-info {
       font-size: 12px;
+      padding: 0 15px;
     }
   
     footer {
