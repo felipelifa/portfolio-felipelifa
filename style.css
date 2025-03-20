@@ -308,99 +308,111 @@ footer {
   text-align: center;   
 }
 
-
+/* Media Queries para mobile */
 @media (max-width: 768px) {
-  .skill {
-    font-size: 35px;
-    margin-top: -40px;
+  header h1 {
+    font-size: 40px;
   }
 
-  .container {
+  header h2 {
+    font-size: 30px;
+  }
+
+  nav {
     flex-direction: column;
-    gap: 10px;
+    text-align: center;
+  }
+
+  nav a {
+    padding: 10px 15px;
+  }
+
+  .sobre {
+    display: block;
     padding: 10px;
+  }
+
+  .sobre img {
     width: 100%;
-    justify-content: center;
-    display: flex;
-    height: 50vh;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .icones {
+    flex-direction: column;
+  }
+
+  .icones .icon {
+    margin: 10px 0;
   }
 
   .caixa {
+    padding: 15px;
     width: 100%;
     max-width: 100%;
-    margin-bottom: 20px;
-  }
-
-  #meusprojetos h2 {
-    font-size: 50px;
-  }
-
-  #meusprojetos h3 {
-    font-size: 18px;
   }
 
   .container-wrapper {
-    align-items: center;
     flex-direction: column;
-    gap: 20px;
+    padding: 10px;
   }
 
   .containerr {
     width: 100%;
-    height: 300px
+    height: auto;
   }
 
   .card {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 2s;
-    will-change: transform;
-  }
-
-  .card:hover {
-    transform: rotateY(180deg);
-  }
-
-  .front, .back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-
-  .front {
-    background-size: cover;
-    background-position: center;
-    border: 4px solid #fff;
-  }
-
-  .back {
-    background: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    transform: rotateY(180deg);
-    text-align: center;
-  }
-
-  h1 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-
-  p {
-    font-size: 14px;
-    line-height: 1.5;
+    height: 300px;
   }
 
   footer {
-    margin: 20px 0 0 0;
+    padding: 20px;
+  }
+}
+
+/* Media Queries para mobile pequeno */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 30px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  nav a {
+    padding: 8px 10px;
+  }
+
+  .sobre img {
+    width: 100%;
+    height: auto;
+  }
+
+  .icones .icon span {
+    height: 50px;
+    width: 50px;
+  }
+
+  .icones .icon span i {
+    font-size: 20px;
+  }
+
+  .icones .icon .escrito {
+    font-size: 16px;
+  }
+
+  .container-wrapper {
+    padding: 5px;
+  }
+
+  .containerr {
+    width: 100%;
+    height: auto;
+  }
+
+  .card {
+    height: 250px;
   }
 }
