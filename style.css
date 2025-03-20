@@ -317,12 +317,15 @@ footer {
 
   .container {
     flex-direction: column;
-    gap: 15px;
-    padding: 15px;
-    width: 40vh;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
   }
 
   .caixa {
+    width: 100%;
     max-width: 100%;
     margin-bottom: 20px;
   }
@@ -343,11 +346,57 @@ footer {
 
   .containerr {
     width: 100%;
-    height: 400px;
+    height: 300px
   }
 
   .card {
+    width: 100%;
     height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 2s;
+    will-change: transform;
+  }
+
+  .card:hover {
+    transform: rotateY(180deg);
+  }
+
+  .front, .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .front {
+    background-size: cover;
+    background-position: center;
+    border: 4px solid #fff;
+  }
+
+  .back {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transform: rotateY(180deg);
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.5;
   }
 
   footer {
