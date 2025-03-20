@@ -308,37 +308,37 @@ footer {
   text-align: center;   
 }
 
-/* Media Queries para mobile */
+
 @media (max-width: 1020px) {
   .sobre {
     display: flex;
-    flex-direction: column; /* Alinha o conteúdo em coluna */
-    align-items: center; /* Garante que o conteúdo seja centralizado */
+    flex-direction: column; 
+    align-items: center; 
     padding: 10px;
-    text-align: center;  /* Centraliza o texto */
-    margin: 0 auto; /* Garante que o container não ultrapasse a tela */
-    width: 100%;  /* Garante que o container ocupe 100% da largura da tela */
-    box-sizing: border-box; /* Inclui padding nas dimensões do container */
+    text-align: center; 
+    margin: 0 auto; 
+    width: 100%;  
+    box-sizing: border-box; 
   }
 
   .sobre img {
-    width: 95%; /* Ajusta a largura da imagem para o tamanho adequado */
+    width: 100%; 
     height: auto; 
-    margin: 10px 0;  /* Ajusta a margem para a imagem */
-    padding: 10px;
+    margin: 10px 0; 
+    padding: 15px;
   }
 
   .sobre p {
     text-align: justify;
-    margin: 10px;  /* Ajuste das margens para evitar que o texto saia do conteúdo */
-    font-size: 14px;  /* Ajuste do tamanho da fonte */
+    margin: 10px; 
+    font-size: 14px; 
   }
 
   .caixa {
     padding: 15px;
     width: 100%;
     max-width: 100%;
-    margin: 0 auto; /* Centraliza as caixas */
+    margin: 0 auto; 
   }
 
   .container-wrapper {
