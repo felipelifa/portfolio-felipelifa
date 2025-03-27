@@ -182,13 +182,30 @@ nav a:hover {
   display: block; 
 }
 
-.skill {
+#skill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  margin-top: 20px;
+}
+
+.seta {
   font-size: 50px;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  margin-bottom: -30px;
-  margin-top: -60px;
+  margin-left: 10px;
+  display: inline-block;
+  animation: moverSeta 1s infinite alternate;
+}
+
+/* Animação para mover a seta para cima e para baixo */
+@keyframes moverSeta {
+  0% {
+      transform: translateY(0);
   }
+  100% {
+      transform: translateY(10px);
+  }
+}
 
 .skillquadro {
   margin-top: 40px;
@@ -200,14 +217,17 @@ nav a:hover {
   padding: 20px;
   justify-content: center;
   text-justify: inter-word;
-  color: white;
-	position: relative;
-	margin: 0px auto 0;
-	width: 350px;
-	height: 250px;
-	background: linear-gradient(0deg, #1d1e22, #42444d);
+  color: rgb(255, 255, 255);
+  position: relative;
+  margin: 0px auto 0;
+  width: 350px;
+  height: 250px;
+  background: #2a2b32; /* COR SÓLIDA (troquei o gradiente) */
   border-radius: 15px;
-  }
+  /* Adicione estas duas propriedades: */
+  background-clip: padding-box;
+  isolation: isolate;
+}
 .block p {
   text-align: center;
   
@@ -222,7 +242,7 @@ nav a:hover {
     position: absolute;
     left: -2px;
     top: -2px;
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background: linear-gradient(45deg, #7a7a7a, #021c27, #093b44, #1f3318, #20574e, #2b335f, #220641, #33247c, #264e6e);
     background-size: 400%;
     width: calc(100% + 4px);
     height: calc(100% + 4px);
@@ -405,7 +425,57 @@ footer {
   text-align: center;
 }
 
-/* Estilos gerais para mobile */
+/* ===== ANIMAÇÕES DE SCROLL ===== */
+/* Header não deve ser animado */
+header {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Elementos que serão animados */
+section, .block, .containerr, .skillquadro, .sobre, .glass, footer {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
+}
+
+/* Quando visível na tela */
+section.visible, .block.visible, .containerr.visible,
+.skillquadro.visible, .sobre.visible, .glass.visible, footer.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Seta indicadora */
+.scroll-hint {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.5rem;
+  color: #000;
+  animation: bounce 2s infinite;
+  z-index: 100;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); }
+  40% { transform: translateY(-20px) translateX(-50%); }
+  60% { transform: translateY(-10px) translateX(-50%); }
+}
+
+/* Esconde a seta após rolar */
+body.scrolled .scroll-hint {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ===== RESPONSIVO ===== */
 @media (max-width: 768px) {
   /* Header */
   header h1 {
@@ -460,11 +530,6 @@ footer {
     margin: 0 10px !important;
   }
 
-  /* Vídeo */
-  .alturavideo video {
-    height: 20vh;
-  }
-
   /* Skills */
   .skill {
     font-size: 2rem !important;
@@ -500,7 +565,7 @@ footer {
   .containerr {
     width: 100% !important;
     height: 400px !important;
-    margin-bottom: 50px !important;
+    margin-bottom: 80px !important;
   }
   
   .card-title {
@@ -512,7 +577,7 @@ footer {
     padding: 8px 0 !important;
   }
 
-  
+  /* Footer */
   footer {
     margin-top: 30px !important;
     padding: 15px;
@@ -521,28 +586,14 @@ footer {
   footer p {
     font-size: 0.8rem;
   }
-  .glass {
-    display: block;
-    margin: 0 auto 30px !important; 
-    float: none !important;
-    width: 250px !important; 
-    height: 280px !important;
-    border-radius: 15px
-  }
-
- 
-  .containerr {
-    margin-bottom: 120px !important; 
-  }
-
   
-  .card-button {
-    margin-top: 20px !important;
-    margin-bottom: 10px !important;
+  /* Seta mobile */
+  .scroll-hint {
+    font-size: 2rem;
+    bottom: 20px;
   }
 }
 
-/* Ajustes para telas muito pequenas (até 400px) */
 @media (max-width: 400px) {
   header h1 {
     font-size: 2rem !important;
@@ -564,10 +615,11 @@ footer {
     font-size: 0.8rem !important;
   }
 
-.containerr {
-  margin-bottom: 100px !important;
+  #skill {
+    font-size: 18px;
+  }
+
+  .seta {
+    font-size: 50px;
+  }
 }
-.glass {
-  width: 200px !important;
-  height: 250px !important;
-}}

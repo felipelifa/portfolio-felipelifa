@@ -13,6 +13,8 @@
 
 <body>
 
+  <div class="scroll-hint">↓</div>
+  
   <header>
         <h1>Bem-vindo!
         </h1>
@@ -64,21 +66,17 @@
                  
              
            </div>     
-          </section> 
-
-          <div class="alturavideo"> 
-            <video autoplay muted loop>
-              <source src="Arquivos/notebook.mp4" type="video/mp4">
-            </video>
-          </div>
-   </section>
+          </section>        
+  
   </div>
   
-<div>
+  <div>
     <section id="skill" class="selection skill">
-    <h2>MINHAS SKILLS</h2>
-  </section>
-  </div>
+        <h2>MINHAS SKILLS</h2>
+        <span class="seta">↓</span>
+    </section>
+</div>
+
 
   <section class="skillquadro">
     <div class="block"></block>
@@ -162,7 +160,37 @@
         </div>
     </section>
   </section>
-
+  <script>
+    // Versão otimizada do observer
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          // Opcional: para animar apenas uma vez
+          // observer.unobserve(entry.target);
+        }
+      });
+    }, { 
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px' // Ativa 50px antes do elemento chegar na viewport
+    });
+  
+    // Observa todos os elementos relevantes
+    const elementos = [
+      ...document.querySelectorAll('section, .block, .containerr, .skillquadro, .sobre, .glass, footer')
+    ];
+    
+    elementos.forEach(el => observer.observe(el));
+  
+    // Seta indicadora (melhor desempenho)
+    let scrollTimeout;
+    window.addEventListener('scroll', () => {
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(() => {
+        document.body.classList.toggle('scrolled', window.scrollY > 100);
+      }, 100);
+    });
+  </script>
 </body>
 
 <footer>
