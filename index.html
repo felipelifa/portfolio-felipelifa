@@ -27,7 +27,7 @@
   
    <section id="sobre" class="section sobre" flex>
     <div>
-      <img src="Arquivos/perfil.jpeg" alt="">
+       <img class="glass" src="Arquivos/perfil.jpeg" alt="">
       <h2>Sobre Mim</h2>
   
           <p>Olá, sou o Felipe!<br>
@@ -67,10 +67,10 @@
           </section> 
 
           <div class="alturavideo"> 
-<section id="video" class="selection video">
-        <video autoplay muted loop >
-      <source src="Arquivos/notebook.mp4" type="video/mp4">
-  </video>
+            <video autoplay muted loop>
+              <source src="Arquivos/notebook.mp4" type="video/mp4">
+            </video>
+          </div>
    </section>
   </div>
   
@@ -80,71 +80,91 @@
   </section>
   </div>
 
-  <section>
-    <div class="container">
-     <div class="caixa" id="css">
+  <section class="skillquadro">
+    <div class="block"></block>
       <h3>HTML</h3>
-      <p>Possuo conhecimentos básicos em HTML, adquiridos por meio de conteúdos gratuitos no YouTube e cursos online disponíveis sem custos. Além disso, obtive uma certificação pela plataforma Mimo, que reforçou meu aprendizado na área.</p>
-    </div>
-    
-     <div class="caixa" id="design">
-      <h3>DESIGN</h3>
-      <p>Através desse processo, consegui adquirir um bom entendimento sobre o funcionamento das cores, quais combinações são mais harmoniosas, além de aprender sobre os tipos de elementos ideais para tornar o site mais fluido e visualmente atrativo.</p>
-    </div>
-     <div class="caixa" id="php">
-      <h3>PHP</h3>
-      <p>Também adquiri conhecimentos em PHP da mesma forma que aprendi HTML. Com isso, criei um site em PHP para testar minhas habilidades, o que me auxiliou no processo de assessoria.</p>
-    </div> 
-     <div class="caixa" id="CyberSecurity">
-        <h3>CyberSecurity</h3>
-        <p>Um dos principais motivos que me levou a ingressar na área foi o meu interesse por Cybersecurity. Tenho conhecimentos básicos na área, possuo uma certificação pela Cisco Networking Academy e estou em processo de obtenção de outras certificações.</p>
-    </div>
+    <p>Possuo conhecimentos básicos em HTML, adquiridos por meio de conteúdos gratuitos no YouTube e cursos online disponíveis sem custos. Além disso, obtive uma certificação pela plataforma Mimo, que reforçou meu aprendizado na área.</p></div>
   </div>
+
+  <div class="block"></block>
+    <h3>DESIGN</h3>
+  <p>Através desse processo, consegui adquirir um bom entendimento sobre o funcionamento das cores, quais combinações são mais harmoniosas, além de aprender sobre os tipos de elementos ideais para tornar o site mais fluido e visualmente atrativo
+</div>  
+
+<div class="block"></block>
+  <h3>PHP</h3>
+<p>Também adquiri conhecimentos em PHP da mesma forma que aprendi HTML. Com isso, criei um site em PHP para testar minhas habilidades, o que me auxiliou no processo de assessoria.</p>
+</div>
+
+<div class="block"></block>
+  <h3>CyberSecurity</h3>
+<p>Um dos principais motivos que me levou a ingressar na área foi o meu interesse por Cybersecurity. Tenho conhecimentos básicos na área, possuo uma certificação pela Cisco Networking Academy e estou em processo de obtenção de outras certificações.</p>
+</div>
+
   </section>
   
-  <section id="meusprojetos" class="selection meusprojetos">
 
+  <section id="meusprojetos" class="selection meusprojetos">
     <h2>MEUS PROJETOS</h2>
     <h3>Passe ou clique sobre as imagens</h3> 
-
-        <section id="cardpart" class="selection cardpart">
-      <div class="container-wrapper">
-        
-        <div class="containerr">
-          <div class="card">
-            <div class="front" style="background-image: url('Arquivos/1.png');"></div>
-            <div class="back">
-              <h1>SITE PESSOAL</h1>
-              <p>Esse site que você esta acessando foi criado por mim utilizando HTML como base e estilizado com CSS. No futuro, pretendo adicionar mais conteúdos de forma dinâmica para aprimorar a experiência dos usuários.</p>
-            </div>   
-          </div>
+  
+    <section id="cardpart" class="selection cardpart">
+        <div class="container-wrapper">
+            <!-- Card 1 -->
+            <div class="containerr">
+                <div class="card">
+                    <div class="front" style="background-image: url('Arquivos/1.png');"></div>
+                    <div class="back">
+                        <h1>SITE PESSOAL</h1>
+                        <p>Esse site que você esta acessando foi criado por mim utilizando HTML como base e estilizado com CSS. No futuro, pretendo adicionar mais conteúdos de forma dinâmica para aprimorar a experiência dos usuários.</p>
+                    </div>   
+                </div>
+                <h4 class="card-title">Site Pessoal</h4>
+                <a href="https://seusite.com" class="card-button" target="_blank">Visitar Site</a>
+            </div>
+  
+            <!-- Card 2 -->
+            <div class="containerr">
+                <div class="card">
+                    <div class="front" style="background-image: url('Arquivos/2.png');"></div>
+                    <div class="back">
+                        <h1>PLUGIN PHP</h1>
+                        <p>Esse plugin foi criado para ajudar na organização dos treinos de corrida. Ele monta automaticamente uma planilha de treinamento baseada nos dados do usuário.</p>
+                    </div>   
+                </div>
+                <h4 class="card-title">Plugin PHP</h4>
+            </div>
+  
+            <!-- Card 3 -->
+            <div class="containerr">
+                <div class="card">
+                    <div class="front" style="background-image: url('Arquivos/3.png');"></div>
+                    <div class="back">
+                        <h1>PLATAFORMA FITNESS</h1>
+                        <p>Criei uma plataforma para meus alunos acompanharem seus treinos. Utilizei PHP, CSS e JavaScript para construir esse sistema.</p>
+                    </div>   
+                </div>
+                <h4 class="card-title">Plataforma Fitness</h4>
+            </div>
+            
+            <!-- Card 4 -->
+            <div class="containerr">
+                <div class="card">
+                    <div class="front" style="background-image: url('Arquivos/Mundofit.jpeg');"></div>
+                    <div class="back">
+                        <h1>SITE PARA UMA ACADEMIA</h1>
+                        <p>Site realizado para uma academia com o intuito de gerar aprendizado na criação, foi usado HTML e CSS somente.</p>
+                    </div>   
+                </div>
+                <h4 class="card-title">Site Academia</h4>
+                <a href="https://mundofit.netlify.app" class="card-button" target="_blank">Visitar Site</a>
+            </div>
         </div>
-    
-        <div class="containerr">
-          <div class="card">
-            <div class="front" style="background-image: url('Arquivos/2.png');"></div>
-            <div class="back">
-              <h1>PLUGIN PHP</h1>
-              <p>Esse plugin foi criado para ajudar na organização dos treinos de corrida. Ele monta automaticamente uma planilha de treinamento baseada nos dados do usuário.</p>
-            </div>   
-          </div>
-        </div>
-    
-        <div class="containerr">
-          <div class="card">
-            <div class="front" style="background-image: url('Arquivos/3.png');"></div>
-            <div class="back">
-              <h1>PLATAFORMA FITNESS</h1>
-              <p>Criei uma plataforma para meus alunos acompanharem seus treinos. Utilizei PHP, CSS e JavaScript para construir esse sistema.</p>
-            </div>   
-          </div>
-        </div>
-    
-      </div>
     </section>
-      
+  </section>
 
 </body>
+
 <footer>
   <p>&copy; 2025 - Meu Portfólio | Todos os direitos reservados</p>
 </footer>
