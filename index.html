@@ -16,10 +16,7 @@
   <div class="scroll-hint">↓</div>
   
   <header>
-        <h1>Bem-vindo!
-        </h1>
-        <h2>Ao meu site</h2>
-        <p>Desenvolvedor Web | Designer | </p>
+        
   </header>
 
   <nav>
@@ -29,16 +26,13 @@
   
    <section id="sobre" class="section sobre" flex>
     <div>
-       <img class="glass" src="Arquivos/perfil.jpeg" alt="">
-      <h2>Sobre Mim</h2>
-  
-          <p>Olá, sou o Felipe!<br>
-            Desde muito novo, sempre fui fascinado por tecnologia. Curiosamente, minha primeira formação foi em Educação Física, mas como isso aconteceu? Sempre fui muito curioso sobre como as coisas funcionam, especialmente o corpo humano, e essa curiosidade me levou a estudar e entender mais profundamente essa área. No entanto, com o tempo, percebi que a minha verdadeira paixão estava em aprender coisas novas e em explorar o universo da tecnologia.
-            
-            Foi aí que a programação entrou na minha vida, como uma forma de aliar meu amor pela aprendizagem contínua com a criação de soluções digitais. Hoje, estou cursando a graduação em Análise e Desenvolvimento de Sistemas (ADS), e, além disso, me dedico a estudar temas diversos por conta própria, sendo um dos meus maiores interesses a área de Cybersegurança.
-            
-            Minha jornada é uma combinação de paixão pela tecnologia e pelo constante desafio de aprender algo novo, e estou empolgado para ver aonde ela vai me levar!  </p>
-             <div> <h2>Me encontre nas redes sociais!</h2></div>              
+       <img class="fotoperfil" src="Arquivos/perfil.jpeg" alt="">
+       <h1>Olá!
+      </h1>
+      <h2>Me chamo Felipe Lima</h2>
+      <p>Seja bem-vindo ao meu site pessoal! Logo abaixo tem mais sobre mim, será um prazer compartilhar quem eu sou. </p>
+      <p id="sp">Caso deseja entrar em contato comigo, minhas redes sociais estão logo abaixo. </p>
+      
             
              <div class="icones">
               <a href="https://www.instagram.com/felipelifa/" class="icon instagram">
@@ -61,19 +55,14 @@
                 </div>
 
                 <span><i class="bi bi-linkedin"></i></span>
-             </a>
-              
-                 
-             
+             </a>             
            </div>     
           </section>        
-  
   </div>
   
   <div>
     <section id="skill" class="selection skill">
         <h2>MINHAS SKILLS</h2>
-        <span class="seta">↓</span>
     </section>
 </div>
 
@@ -108,7 +97,7 @@
   
     <section id="cardpart" class="selection cardpart">
         <div class="container-wrapper">
-            <!-- Card 1 -->
+            
             <div class="containerr">
                 <div class="card">
                     <div class="front" style="background-image: url('Arquivos/1.png');"></div>
@@ -118,10 +107,10 @@
                     </div>   
                 </div>
                 <h4 class="card-title">Site Pessoal</h4>
-                <a href="https://seusite.com" class="card-button" target="_blank">Visitar Site</a>
+                <a href="https://felipelifa.github.io" class="card-button" target="_blank">Visitar Site</a>
             </div>
   
-            <!-- Card 2 -->
+           
             <div class="containerr">
                 <div class="card">
                     <div class="front" style="background-image: url('Arquivos/2.png');"></div>
@@ -133,7 +122,7 @@
                 <h4 class="card-title">Plugin PHP</h4>
             </div>
   
-            <!-- Card 3 -->
+          
             <div class="containerr">
                 <div class="card">
                     <div class="front" style="background-image: url('Arquivos/3.png');"></div>
@@ -145,7 +134,7 @@
                 <h4 class="card-title">Plataforma Fitness</h4>
             </div>
             
-            <!-- Card 4 -->
+            
             <div class="containerr">
                 <div class="card">
                     <div class="front" style="background-image: url('Arquivos/Mundofit.jpeg');"></div>
@@ -161,28 +150,27 @@
     </section>
   </section>
   <script>
-    // Versão otimizada do observer
+    
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
-          // Opcional: para animar apenas uma vez
-          // observer.unobserve(entry.target);
+        
         }
       });
     }, { 
       threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px' // Ativa 50px antes do elemento chegar na viewport
+      rootMargin: '0px 0px -50px 0px' // 
     });
   
-    // Observa todos os elementos relevantes
+
     const elementos = [
       ...document.querySelectorAll('section, .block, .containerr, .skillquadro, .sobre, .glass, footer')
     ];
     
     elementos.forEach(el => observer.observe(el));
   
-    // Seta indicadora (melhor desempenho)
+
     let scrollTimeout;
     window.addEventListener('scroll', () => {
       clearTimeout(scrollTimeout);
