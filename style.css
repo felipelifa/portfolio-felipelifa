@@ -175,20 +175,18 @@ nav a:hover {
 .icones .linkedin:hover .escrito {
   background-image: linear-gradient(to right, rgb(66, 66, 102), rgb(6, 113, 155));
 }
-
-.alturavideo {
-  width: 100vw; 
-  margin-left: calc(-50vw + 50%); 
-  overflow: hidden; 
+.quemeusou {
+  margin-top: 100px;
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
 }
-
-.alturavideo video {
-  width: 100%;
-  height: 30vh;
-  object-fit: cover;
-  display: block; 
+.quemeusou h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
 }
-
 #skill {
   display: flex;
   align-items: center;
