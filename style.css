@@ -30,7 +30,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: #afafaf;
-  color: #333;
 }
 
 nav {
@@ -196,6 +195,7 @@ nav a:hover {
   justify-content: center;
   font-size: 35px;
   margin-top: 20px;
+  margin-bottom: -50px;
 }
 
 .seta {
@@ -250,7 +250,7 @@ nav a:hover {
     position: absolute;
     left: -2px;
     top: -2px;
-    background: linear-gradient(45deg, #111010, #021c27, #093b44, #0a0c09, #060f0e, #2b335f, #150429, #33247c, #000000);
+    background: linear-gradient(45deg, #7a7a7a, #021c27, #093b44, #0a0c09, #060f0e, #2b335f, #150429, #33247c, #000000);
     background-size: 400%;
     width: calc(100% + 4px);
     height: calc(100% + 4px);
