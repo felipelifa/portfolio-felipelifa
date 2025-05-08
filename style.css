@@ -390,23 +390,23 @@ nav a:hover {
   display: block;
   width: 80%;
   margin: 15px auto 0;
-  padding: 10px 0;
-  background-color: #000;
-  background: linear-gradient(to right, #0d0d0e, #29251b);
+  padding: 12px 0;
+  background: linear-gradient(to right, #0d0d0e, #08587e);
+  color: #ffffff;
   text-decoration: none;
-  border-radius: 0;
-  font-weight: normal;
   text-align: center;
-  transition: all 0.3s ease;
-  border: 2px solid #000;
-  margin-top: -6px;
-  border-radius: 15px;
-  color: rgb(185, 158, 0);
-  }
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif; 
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
 
 .card-button:hover {
-  background-color: transparent;
-  color: hsl(0, 0%, 92%);
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(8, 88, 126, 0.5);
 }
 .back h1 {
   font-size: 24px;
