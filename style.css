@@ -9,7 +9,7 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(90deg, #363636, #5c5b5b, #3b3b3b, #222222, #000000);
+  background: white
 }
 
 /* MENU MOBILE */
@@ -309,99 +309,102 @@ nav.menu > ol > li > ol > li a {
 }
 
 /* AQUI COMEÇA PARTE DO SOBRE MIM */
-.quemeusou {
-  padding: 20px 20px;
-  background: #ffffff;
-  color: #000000;
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.7;
-  max-width: 1000px;
-  margin: 40px auto;
-  margin-bottom: 0px;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-  text-align: center;
-  z-index: 1;
-}
-
-.quemeusou h1 {
-  font-size: 2.2rem;
-  margin-bottom: 20px;
-  text-align: center;
-   background: linear-gradient(90deg, #000000, #292828, #272727, #222222, #181818);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  
-}
-
-.quemeusou p {
-  font-size: 1.1rem;
-  margin-bottom: 15px;
-  text-align: justify;
-}
-
-/* AQUI COMEÇA PARTE DO SOBRE SKILL */
-#skill {
+.intro-section {
   display: flex;
-  align-items: center;
   justify-content: center;
-  font-size: 40px;
-  margin-bottom: 10px;
-  color: white;
+  align-items: flex-start;
+  padding: 80px 40px;
+  background-color: #f4f4f0;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+}
+
+.intro-left {
+  flex: 1;
+  max-width: 40%;
+  padding-right: 40px;
+}
+
+.intro-left h1 {
+  font-size: 32px;
   font-weight: bold;
-  margin-top: 40px;
+  text-transform: uppercase;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+  margin: 0;
 }
 
-.seta {
-  font-size: 50px;
-  margin-left: 10px;
-  display: inline-block;
-  animation: moverSeta 1s infinite alternate;
-}
- section.skillquadro {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto; /* <-- centraliza horizontalmente */
-  justify-content: center; /* <-- força o grid a ficar centralizado */
+.intro-right {
+  flex: 1;
+  max-width: 60%;
 }
 
-
-.block {
-  background-color: #ffffff;
-  border-radius: 16px;
-  padding: 25px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: all 0.3s ease;
-  opacity: 0;
-  transform: translateY(30px);
-}
-
-.block:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-
-.block h3 {
-  font-size: 1.4rem;
-  color: #f74114;
-  margin-bottom: 10px;
-}
-
-.block p {
-  color: #333;
-  font-size: 0.95rem;
+.intro-highlight {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
   line-height: 1.5;
 }
 
-/* Animação de entrada */
-.block.visible {
-  opacity: 1;
-  transform: translateY(0);
-  transition: all 0.6s ease;
-} 
+.intro-description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+}
+
+
+
+
+/* AQUI COMEÇA PARTE DO SOBRE SKILL */
+
+.skill {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  color: white;
+}
+
+.skills-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 60px 20px;
+  background: linear-gradient(90deg, #363636, #5c5b5b, #3b3b3b, #222222, #000000);
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+}
+
+.block {
+  background-color: #2d2d2d;
+  border: 1px solid #444;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  padding: 24px;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.block:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(247, 65, 20, 0.3);
+}
+
+.block h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #f74114;
+}
+
+.block p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+
+
 
 /* AQUI COMEÇA MEUS PROJETOS */
 .meusprojetostitulos {
@@ -409,7 +412,7 @@ nav.menu > ol > li > ol > li a {
   text-align: center;
   margin-top: 20px;
   margin-bottom: -100px;
-  color: white;
+  color: rgb(7, 7, 7);
 }
 .imagemscroll * ,
 *::after,
@@ -426,9 +429,9 @@ nav.menu > ol > li > ol > li a {
   --border-xl: 20px;
   --border-m: 10px;
   --accent-color: hsla(198, 86%, 53%, 0);
-  --fill-primary: hsl(204, 3%, 47%);
+  --fill-primary: hsl(0, 0%, 25%);
   --fill-active: hsl(204, 23%, 20%);
-  --fill-disabled: hsl(204, 9%, 85%);
+  --fill-disabled: hsl(0, 0%, 7%);
 }
 
 .imagemscroll {
@@ -436,7 +439,7 @@ nav.menu > ol > li > ol > li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(90deg, #363636, #5c5b5b, #3b3b3b, #222222, #000000);
+ background-color: white;
   padding: 2rem;
 }
 .thumbnail {
@@ -448,7 +451,7 @@ nav.menu > ol > li > ol > li a {
 
 .caption {
   margin-top: 8px;
-  color: #ffffff;
+  color: #000000;
   font-size: 0.85rem;
 }
 
@@ -463,7 +466,7 @@ nav.menu > ol > li > ol > li a {
   margin-left: 2px;
   margin-right: 2px;
   font-size: 0.75rem;
-  color: #c4c4c4;
+  color: #414040;
 }
 
 .image-thumbnail-carousel {
@@ -482,7 +485,7 @@ nav.menu > ol > li > ol > li a {
   aspect-ratio: 16 / 9;
   width: 100%;
   max-height: 500px;
-  box-shadow: 0 0.375em 0.67em rgba(201, 201, 201, 0.637), 0 0.5em 1.3em #0002;
+  box-shadow: 0 0.375em 0.67em rgba(27, 27, 27, 0.637), 0 0.5em 1.3em rgba(0, 0, 0, 0.753);
   }
 .image-display img {
   width: 100%;
@@ -494,7 +497,7 @@ nav.menu > ol > li > ol > li a {
 .screen {
   height: 100%;
   display: flex;
-  background-image: linear-gradient(12deg, #aaa, #eee);
+  background-image: linear-gradient(12deg, #0e0e0e00, #3b3b3b0c);
   user-select: none;
 }
 
@@ -548,7 +551,7 @@ nav.menu > ol > li > ol > li a {
   flex: 0 0 calc((100% / var(--items)) - 10px);
   border-radius: var(--border-m);
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(153, 153, 153, 0.589);
+  box-shadow: 0 0 10px rgb(59, 59, 59);
   cursor: pointer;
   transition: transform 0.3s ease;
 }
@@ -575,5 +578,5 @@ nav.menu > ol > li > ol > li a {
 
 }
 .voltar-topo {
-  color: red;
+  color: rgb(0, 0, 0);
 }
