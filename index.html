@@ -10,32 +10,55 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="icon" href="Arquivos/code.png" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	  rel="stylesheet">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	 
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 
-<body>
-
-  <div class="scroll-hint">↓</div>
-  
+<body> 
 
 <header>
-  <div class="menu-mobile-btn" id="menu-toggle">
-    <i class="bi bi-list"></i>
-  </div>
-  <nav id="nav-menu">
-    <a href="#sobre">Sobre Mim</a>
-    <a href="#skill">Minhas Skills</a>
-    <a href="#meusprojetos">Projetos</a>
-  </nav>
+  <nav class="menu">
+  <ol>
+  <li>
+    <a href="#inicio">Início</a>
+    <ol>
+      <li><a href="#sobre">Sobre Mim</a></li>
+      <li><a href="#skill">Minhas Skills</a></li>
+      <li><a href="#projetosmenu">Projetos</a></li>
+    </ol>
+  </li>
+  <li>
+    <a href="#sobre">Sobre</a>
+    <ol>
+      <li><a href="#formacao">Formação</a></li>
+      <li><a href="#interesse">Interesses</a></li>
+    </ol>
+  </li>
+  <li>
+    <a href="#contato">Contato</a>
+    <ol>
+      <li><a href="https://wa.me/5535992436211">Whatsapp</a></li>
+      <li><a href="https://www.instagram.com/felipelifa/">Instagram</a></li>
+      <li><a href="https://www.linkedin.com/in/felipe-lima1996">LinkedIn</a></li>
+    </ol>
+  </li>
+</ol>
+</nav>
 </header>
 
-
+<div class="caixamenu">
+  
 <section id="sobre" class="section sobre">
   <div class="container-sobre">
 
     <div class="coluna-esquerda">
-      <h1>Sou o</h1>
-      <h2>Felipe Lima</h2>
-    <p>Abaixo você encontra mais sobre mim, será um prazer compartilhar minha trajetória com você.</p>
+      <h1>Olá!</h1>
+      <h2>Me chamo</h2>
+      <h3>Felipe Lima</h3>
+    <p>Seja muito bem-vindo ao meu site pessoal! Abaixo você encontra mais sobre mim, será um prazer compartilhar minha trajetória com você.</p>
   </div>
 
   <div class="redes-sociais">
@@ -61,11 +84,17 @@
 </section>
 
 
-  <div class="quemeusou">
-    <h1>SOBRE MIM</h1>
-   <p>Sou apaixonado por tecnologia e aprendizado. Comecei na Educação Física, mas encontrei na programação minha verdadeira vocação. Hoje curso Análise e Desenvolvimento de Sistemas e estudo Cybersegurança, buscando sempre transformar ideias em soluções digitais.</p>
-
-  </div>
+  <section class="quemeusou" id="formacao">
+  <h1>SOBRE MIM</h1>
+  <p>
+    Desde cedo, sempre fui fascinado por tecnologia e aprendizado. Minha primeira formação foi em Educação Física, impulsionada pela curiosidade sobre o corpo humano. 
+    Com o tempo, descobri que minha verdadeira paixão estava em aprender e criar soluções com tecnologia.
+  </p>
+  <p>
+    Hoje curso Análise e Desenvolvimento de Sistemas e estudo por conta própria, com grande interesse em Cybersegurança. 
+    Minha jornada une o amor por aprender com a vontade de transformar ideias em soluções digitais.
+  </p>
+</section>
 
   <div>
     <section id="skill" class="selection skill">
@@ -95,68 +124,76 @@
     <h3>CyberSecurity</h3>
       <p>Um dos principais motivos que me levou a ingressar na área foi o meu interesse por Cybersecurity. Tenho conhecimentos básicos na área, possuo uma certificação pela Cisco Networking Academy e estou em processo de obtenção de outras certificações.</p>
   </div>
+</section>
 
-  </section>
-  
+<DIV class="meusprojetostitulos" id="projetosmenu"><h1>MEUS PROJETOS</h1></DIV>
 
-  <section id="meusprojetos" class="meusprojetos2">
-    <h2>MEUS PROJETOS</h2>
-    <h3>Passe ou clique sobre as imagens</h3> 
-  
-    <section id="cardpart" class="selection cardpart">
-        <div class="container-wrapper">
-            
-            <div class="containerr">
-                <div class="card">
-                    <div class="front" style="background-image: url('Arquivos/1.png');"></div>
-                    <div class="back">
-                        <h1>SITE PESSOAL</h1>
-                        <p>Esse site que você esta acessando foi criado por mim utilizando HTML como base e estilizado com CSS. No futuro, pretendo adicionar mais conteúdos de forma dinâmica para aprimorar a experiência dos usuários.</p>
-                    </div>   
-                </div>
-                <h4 class="card-title">Site Pessoal</h4>
-                <a href="https://felipelifa.github.io" class="card-button" target="_blank">Visitar Site</a>
-            </div>
-  
-           
-            <div class="containerr">
-                <div class="card">
-                    <div class="front" style="background-image: url('Arquivos/2.png');"></div>
-                    <div class="back">
-                        <h1>PLUGIN PHP</h1>
-                        <p>Esse plugin foi criado para ajudar na organização dos treinos de corrida. Ele monta automaticamente uma planilha de treinamento baseada nos dados do usuário.</p>
-                    </div>   
-                </div>
-                <h4 class="card-title">Plugin PHP</h4>
-            </div>
-  
-          
-            <div class="containerr">
-                <div class="card">
-                    <div class="front" style="background-image: url('Arquivos/3.png');"></div>
-                    <div class="back">
-                        <h1>PLATAFORMA FITNESS</h1>
-                        <p>Criei uma plataforma para meus alunos acompanharem seus treinos. Utilizei PHP, CSS e JavaScript para construir esse sistema.</p>
-                    </div>   
-                </div>
-                <h4 class="card-title">Plataforma Fitness</h4>
-            </div>
-            
-            
-            <div class="containerr">
-                <div class="card">
-                    <div class="front" style="background-image: url('Arquivos/Mundofit.jpeg');"></div>
-                    <div class="back">
-                        <h1>SITE PARA UMA ACADEMIA</h1>
-                        <p>Site realizado para uma academia com o intuito de gerar aprendizado na criação, foi usado HTML e CSS somente.</p>
-                    </div>   
-                </div>
-                <h4 class="card-title">Site Academia</h4>
-                <a href="https://mundofit.netlify.app" class="card-button" target="_blank">Visitar Site</a>
-            </div>
-        </div>
+<section class="imagemscroll">
+<div class="image-thumbnail-carousel">
+    <section class="image-display">
+        <div class="screen"></div>
     </section>
-  </section>
+    <section class="thumbnail-carousel">
+        <button type="button" class="carousel__btn prev" aria-label="Previous slide">
+            <svg width="16" height="16" fill="currentColor" class="arrow-icon arrow-left-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+            </svg>
+        </button>
+        <ul class="carousel__slider">
+            <li class="carousel__slide">
+                <div class="thumbnail">
+                    <img loading="lazy" src="Arquivos/1.png" alt="">
+                       <div class="caption">
+      <h3>Site consultoria</h3>
+      <p>Site feito para um personal trainer, conversão para consultoria.</p>
+                  </div>
+            </li>
+            <li class="carousel__slide">
+                <div class="thumbnail">
+                    <img loading="lazy" src="Arquivos/2.png" alt="">
+                <div class="caption">
+      <h3>Site academia MundoFit</h3>
+      <p>Site feito para uma academia.</p>
+                  </div>
+            </li>
+            <li class="carousel__slide">
+                <div class="thumbnail">
+                    <img loading="lazy" src="Arquivos/3.png" alt="">
+                    <div class="caption">
+      <h3>Plataforma de treinamento</h3>
+      <p>Site feito para hospedar treinos para alunos.</p>
+                </div>
+            </li>
+            <li class="carousel__slide">
+                <div class="thumbnail">
+                    <img loading="lazy" src="Arquivos/4.png" alt="">
+                    <div class="caption">
+      <h3>Planilha automatizada</h3>
+      <p>Criação de um site com planilha automatizada de processos.</p>
+                </div>
+            </li>
+            <li class="carousel__slide">
+                <div class="thumbnail">
+                    <img loading="lazy" src="Arquivos/5.png" alt="">
+                <div class="caption">
+      <h3>Site DogCare</h3>
+      <p>Site feito para serviço de dogcare.</p>
+                </div>
+            </li>
+           
+        </ul>
+        <button type="button" class="carousel__btn next" aria-label="Next slide">
+            <svg width="16" height="16" fill="currentColor" class="arrow-icon arrow-right-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+            </svg>
+        </button>
+    </section>
+</div>
+  </div>
+</div>
+</section>
+
+
 
   <footer class="meu-footer">
   <div class="footer-conteudo">
@@ -164,55 +201,6 @@
     <a href="#sobre" class="voltar-topo">Voltar ao topo ↑</a>
   </div>
 </footer>
-
-
-  <script>
-    
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        
-        }
-      });
-    }, { 
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px' // 
-    });
-  
-
-    const elementos = [
-      ...document.querySelectorAll('section, .block, .containerr, .skillquadro, .sobre, .glass, footer')
-    ];
-    
-    elementos.forEach(el => observer.observe(el));
-  
-
-    let scrollTimeout;
-    window.addEventListener('scroll', () => {
-      clearTimeout(scrollTimeout);
-      scrollTimeout = setTimeout(() => {
-        document.body.classList.toggle('scrolled', window.scrollY > 100);
-      }, 100);
-    });
-  </script>
- 
-<script>
-  const menuToggle = document.getElementById('menu-toggle');
-  const navMenu = document.getElementById('nav-menu');
-  const navLinks = navMenu.querySelectorAll('a');
-
-  menuToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-  });
-
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      navMenu.classList.remove('active');
-    });
-  });
-</script>
-
-
+<script src="js/java.js"></script>
 </body>
 </html>
