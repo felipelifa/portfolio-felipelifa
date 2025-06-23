@@ -616,7 +616,6 @@ nav.menu > ol > li > ol > li a {
     padding: 20px;
     text-align: center;
     background-image: none;
-    margin-bottom: -400px;
     margin-top: -200px;
   }
    #sobre::after {
@@ -624,33 +623,34 @@ nav.menu > ol > li > ol > li a {
     -webkit-backdrop-filter: none;
     background: transparent;
   }
-   .redes-sociais {
-    margin-left: 30%;
-    margin-right: 10%;
-  }
+  
   .coluna-esquerda {
-    margin-left: 25%;
-    margin-right: 5%;
+    margin: 0;
   }
    .coluna-esquerda p{
-    margin-left: 0%;
-    margin-right: 20%;
+    margin: 0;
   }
 
   .coluna-esquerda h1 {
     font-size: 100px;
     text-align: center;
+    margin: 9;
   }
   .coluna-esquerda h2 {
     font-size: 36px;
+
   }
   .coluna-esquerda h3 {
     font-size: 40px;
   }
-  
+  .titulo-redes {
+    text-align: center;
+    justify-content: center;
+  }
   .intro-section {
     flex-direction: column;
     align-items: center;
+    margin-top: -400px;
       }
 
   .intro-left, .intro-right {
