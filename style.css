@@ -681,7 +681,7 @@ nav.menu > ol > li > ol > li a {
     align-items: center;
     justify-content: center;
   }
-
+  
   #sobre::after {
     background: none;
     backdrop-filter: none;
