@@ -700,7 +700,7 @@ nav.menu > ol > li > ol > li a {
   .coluna-esquerda h1 {
     font-size: 38px;
     margin-bottom: 10px;
-    margin-left: 130px;
+    margin-left: 120px;
   }
 
   .coluna-esquerda p {
@@ -804,6 +804,52 @@ nav.menu > ol > li > ol > li a {
 
   .carousel__slide {
     flex: 0 0 80%;
+  }
+ .imagemscroll {
+    padding: 1rem;
+    flex-direction: column;
+  }
+
+  .image-thumbnail-carousel {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .image-display {
+    aspect-ratio: 1 / 1;
+    max-height: 300px;
+    box-shadow: 0 0.3em 0.6em rgba(27, 27, 27, 0.5);
+  }
+
+  .caption h3 {
+    font-size: 0.9rem;
+  }
+
+  .caption p {
+    font-size: 0.7rem;
+  }
+
+  .carousel__btn {
+    padding: 0.5rem;
+  }
+
+  .arrow-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .carousel__slider {
+    gap: 0.5rem;
+    padding: 0.25rem;
+  }
+
+  .carousel__slide {
+    flex: 0 0 60%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  .thumbnail img {
+    height: auto;
   }
 }
 
