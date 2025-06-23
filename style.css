@@ -583,7 +583,7 @@ nav.menu > ol > li > ol > li a {
 }
 
 /* Notebook pequeno (até 1200px) */
-@media (max-width: 1200px) {
+@media (min-width: 920px) and (max-width: 1200px) {
   .coluna-esquerda h1 {
     font-size: 100px;
   }
@@ -606,7 +606,7 @@ nav.menu > ol > li > ol > li a {
 }
 
 /* Tablet (até 991px) */
-@media (max-width: 910px) {
+@media (min-width: 769px) and (max-width: 910px) {
   nav.menu {
     width: 80px;
   }
@@ -671,12 +671,15 @@ nav.menu > ol > li > ol > li a {
   }
 }
 
-  @media (max-width: 768px) {
+  @media (min-width: 5px) and (max-width: 768px){
   /* Seção Sobre */
   #sobre {
     background-image: none;
     text-align: center;
-    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   #sobre::after {
@@ -686,31 +689,32 @@ nav.menu > ol > li > ol > li a {
   }
 
   .container-sobre {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-  }
+    margin: 0;
+    margin-top: -380px;
+    }
 
   .coluna-esquerda {
-    width: 100%;
     margin: 0;
-  }
+          }
 
   .coluna-esquerda h1 {
     font-size: 38px;
     margin-bottom: 10px;
+    margin-left: 130px;
   }
 
   .coluna-esquerda p {
     font-size: 16px;
     margin: 0 10px;
+    margin-left: 130px;
   }
 
   /* Redes Sociais */
   .redes-sociais {
     margin-top: 25px;
     margin-bottom: 40px;
+    align-items: center;
+    justify-content: center;
   }
 
   .titulo-redes {
@@ -720,9 +724,9 @@ nav.menu > ol > li > ol > li a {
 
   .icones {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
   }
 
   .icon {
@@ -774,6 +778,9 @@ nav.menu > ol > li > ol > li a {
 
   .intro-description {
     font-size: 15px;
+  }
+  .intro-section {
+    margin-top: -400px;
   }
 
   /* Skills */
