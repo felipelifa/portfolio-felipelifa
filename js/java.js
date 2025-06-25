@@ -122,3 +122,10 @@ const observer = new IntersectionObserver(entries => {
 blocks.forEach(block => {
   observer.observe(block);
 });
+
+  const toggleBtn = document.getElementById('menuToggle');
+  const menu = document.querySelector('nav.menu');
+
+  toggleBtn.addEventListener('click', () => {
+    menu.classList.toggle('open');
+  });
