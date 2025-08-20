@@ -129,3 +129,78 @@ blocks.forEach(block => {
   toggleBtn.addEventListener('click', () => {
     menu.classList.toggle('open');
   });
+(function(){
+  const slider = document.getElementById('slider');
+  if (!slider) return;
+
+  const slides = Array.from(slider.querySelectorAll('.carousel__slide'));
+  const prevBtn = document.querySelector('.carousel__btn.prev');
+  const nextBtn = document.querySelector('.carousel__btn.next');
+  const dotsWrap = document.querySelector('.carousel-dots');
+  const preview = document.getElementById('previewImage');
+
+  // cria dots
+  const dots = slides.map((_, i) => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.setAttribute('aria-label', 'Ir para slide ' + (i+1));
+    b.addEventListener('click', () => goTo(i, true));
+    dotsWrap && dotsWrap.appendChild(b);
+    return b;
+  });
+
+  let idx = 0, ticking = false;
+
+  function setActive(i){
+    idx = Math.max(0, Math.min(i, slides.length - 1));
+    slides.forEach((li, j) => li.setAttribute('aria-selected', j === idx ? 'true' : 'false'));
+    dots.forEach((d, j) => d.setAttribute('aria-current', j === idx ? 'true' : 'false'));
+    // preview grande (desktop)
+    const a = slides[idx].querySelector('.thumbnail');
+    if (preview && a && a.dataset.cover) preview.src = a.dataset.cover;
+  }
+
+  function goTo(i, smooth){
+    const el = slides[i];
+    if (!el) return;
+    el.scrollIntoView({ behavior: smooth ? 'smooth' : 'instant', inline: 'center', block: 'nearest' });
+    setActive(i);
+  }
+
+  // botões
+  prevBtn && prevBtn.addEventListener('click', () => goTo(idx - 1, true));
+  nextBtn && nextBtn.addEventListener('click', () => goTo(idx + 1, true));
+
+  // teclado
+  slider.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight') goTo(idx + 1, true);
+    if (e.key === 'ArrowLeft') goTo(idx - 1, true);
+  });
+
+  // detectar slide ativo ao rolar
+  slider.addEventListener('scroll', () => {
+    if (ticking) return;
+    window.requestAnimationFrame(() => {
+      const rects = slides.map(s => {
+        const r = s.getBoundingClientRect();
+        return { el: s, center: Math.abs((r.left + r.right) / 2 - window.innerWidth / 2) };
+      });
+      const nearest = rects.reduce((a, b) => a.center < b.center ? a : b);
+      const i = slides.indexOf(nearest.el);
+      setActive(i);
+      ticking = false;
+    });
+    ticking = true;
+  }, { passive: true });
+
+  // swipe (touch)
+  let startX = 0;
+  slider.addEventListener('touchstart', (e) => { startX = e.touches[0].clientX; }, { passive: true });
+  slider.addEventListener('touchend', (e) => {
+    const dx = e.changedTouches[0].clientX - startX;
+    if (Math.abs(dx) > 50) (dx < 0 ? goTo(idx + 1, true) : goTo(idx - 1, true));
+  });
+
+  // init
+  setActive(0);
+})();
