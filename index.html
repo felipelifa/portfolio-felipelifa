@@ -1,234 +1,219 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Olá, sou o Felipe, programador junior!">
-    <title>Felipe Lima</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="icon" href="Arquivos/code.png" type="image/x-icon"/>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-	  rel="stylesheet">
- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	 
-		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Felipe Lima — Programador</title>
+  <meta name="description" content="Portfólio de Felipe Lima: desenvolvimento web, design e cibersegurança." />
+  <meta property="og:title" content="Felipe Lima — Programador" />
+  <meta property="og:description" content="Portfólio de Felipe Lima: desenvolvimento web, design e cibersegurança." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#111827" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="Arquivos/code.png" type="image/png" />
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="style.css" />
 </head>
+<body>
+  <!-- ===== Cabeçalho / Navegação ===== -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primária">
+      <a class="brand" href="#inicio" aria-label="Ir para o início">
+        <span class="brand-logo" aria-hidden="true">FL</span>
+        <span>Felipe Lima</span>
+      </a>
 
-<body> 
+      <button class="menu-toggle" aria-expanded="false" aria-controls="menu-links">
+        <span class="bi bi-list" aria-hidden="true"></span>
+        <span class="sr-only">Abrir/fechar menu</span>
+      </button>
 
-<header>
-  <nav class="menu">
-  <ol>
-  <li>
-    <a href="#inicio">Início</a>
-    <ol>
-      <li><a href="#sobre">Sobre Mim</a></li>
-      <li><a href="#skill">Minhas Skills</a></li>
-      <li><a href="#projetosmenu">Projetos</a></li>
-    </ol>
-  </li>
-  <li>
-    <a href="#sobre">Sobre</a>
-    <ol>
-      <li><a href="#formacao">Formação</a></li>
-      <li><a href="#interesse">Interesses</a></li>
-    </ol>
-  </li>
-  <li>
-    <a href="#contato">Contato</a>
-    <ol>
-      <li><a href="https://wa.me/5535992436211">Whatsapp</a></li>
-      <li><a href="https://www.instagram.com/felipelifa/">Instagram</a></li>
-      <li><a href="https://www.linkedin.com/in/felipe-lima1996">LinkedIn</a></li>
-    </ol>
-  </li>
-</ol>
-</nav>
-</header>
+      <div id="menu-links" class="nav-links" role="menubar">
+        <a role="menuitem" href="#sobre">Sobre</a>
+        <a role="menuitem" href="#skills">Skills</a>
+        <a role="menuitem" href="#projetos">Projetos</a>
+        <a role="menuitem" href="#contato">Contato</a>
+      </div>
+      <div class="nav-cta">
+        <a class="btn" href="https://wa.me/5535992436211" target="_blank" rel="noopener">
+          Fale comigo <i class="bi bi-whatsapp" aria-hidden="true"></i>
+        </a>
+      </div>
+    </nav>
+  </header>
 
-
-  
-<section id="sobre" class="section sobre">
-  <div class="container-sobre">
-
-    <div class="coluna-esquerda">
-      <h1>Felipe Lima</h1>
-      <p>
-        Seja muito bem-vindo ao meu site pessoal! Abaixo você encontra mais sobre mim, será um prazer compartilhar minha trajetória com você.
-      </p>
-
-     
-        <p class="titulo-redes">Minhas Redes Sociais</p>
-
-        <div class="icones">
-          <a href="https://www.instagram.com/felipelifa/" class="icon instagram">
-            <div class="escrito">Instagram</div>
-            <span><i class="bi bi-instagram"></i></span>
-          </a>
-
-          <a href="https://wa.me/5535992436211" class="icon whatsapp">
-            <div class="escrito">Whatsapp</div>
-            <span><i class="bi bi-whatsapp"></i></span>
-          </a>
-
-          <a href="https://www.linkedin.com/in/felipe-lima1996" class="icon linkedin">
-            <div class="escrito">Linkedin</div>
-            <span><i class="bi bi-linkedin"></i></span>
-          </a>
-        </div>
+  <main id="inicio">
+    <!-- ===== Hero com Foto ===== -->
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-grid hero-with-photo">
+        <div class="hero-left">
+          <h1 id="hero-title">
+            Conectando processos simples <span class="highlight">usando código</span> de forma inteligente
+          </h1>
+          <p class="subtitle">
+            Ex-treinador de Educação Física, estudando ADS. Transformo conhecimento em soluções digitais eficientes.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#projetos">Ver projetos <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+            <a class="btn btn-secondary" href="#contato" aria-label="Ir para contato">Contato</a>
           </div>
+          <div class="hero-badges">
+            <span class="badge"><i class="bi bi-patch-check" aria-hidden="true"></i> Disponível para estágio e freelance</span>
+          </div>
+        </div>
 
-  </div>
-</section>
-
-
-
- <section class="intro-section">
-  <div class="intro-left">
-    <h1>
-      CONECTANDO PROCESSOS<br>
-      SIMPLES, USANDO CÓDIGO<br>
-      DE FORMA INTELIGENTE
-    </h1>
-  </div>
-  <div class="intro-right">
-    <p class="intro-highlight">
-      Olá! Sou Felipe, ex-treinador de Educação Física e atualmente cursando Análise e Desenvolvimento de Sistemas, apaixonado por transformar conhecimento em soluções digitais eficazes.
-    </p>
-    <p class="intro-description">
-      Estou criando uma base sólida e uma crescente experiência em desenvolvimento web, estou criando ferramentas que unem personalização, desempenho e tecnologia. Seja para estruturar tarefas de forma mais inteligentes ou desenvolver interfaces funcionais, meu foco está em oferecer experiências que realmente fazem a diferença. Vamos construir algo extraordinário juntos?
-    </p>
-  </div>
-</section>
-
-
-  </div>
-</section>
-
-
-  <div>
-    <section id="skill" class="selection skill">
-        <h2>MINHAS SKILLS</h2>
+        <aside class="hero-right" aria-label="Foto de Felipe">
+          <picture>
+            <!-- substitua pelos seus arquivos reais -->
+            <source srcset="Arquivos/felipe@2x.jpg 2x, Arquivos/felipe.jpg 1x" type="image/jpeg" />
+            <img class="hero-photo" src="Arquivos/felipe.png" alt="Retrato de Felipe Lima" width="400" height="520" />
+          </picture>
+        </aside>
+      </div>
     </section>
-</div>
 
+    <!-- ===== Sobre ===== -->
+    <section id="sobre" class="section container" aria-labelledby="sobre-title">
+      <div class="section-title"><h2 id="sobre-title">Sobre mim</h2></div>
 
-  <section class="skills-section">
-  <div class="block">
-    <h3>HTML</h3>
-    <p>Possuo conhecimentos básicos em HTML, adquiridos por meio de conteúdos gratuitos no YouTube e cursos online gratuitos. Além disso, obtive uma certificação pela plataforma Mimo, que reforçou meu aprendizado na área.</p>
-  </div>
+      <div class="sobre-grid">
+        <div class="sobre-texto">
+          <p>
+            Sou Felipe, desenvolvedor web focado em criar interfaces rápidas, acessíveis e fáceis de manter. Gosto de
+            soluções simples, código limpo e decisões guiadas por objetivo — do HTML semântico ao detalhe de microinteração
+            no CSS e no JavaScript.
+          </p>
 
-  <div class="block">
-    <h3>DESIGN</h3>
-    <p>Consegui adquirir um bom entendimento sobre o funcionamento das cores, combinações mais harmoniosas e elementos ideais para tornar sites mais fluídos e visualmente atrativos.</p>
-  </div>
+          <p>
+            Trabalho com boas práticas de front-end (estrutura clara, componentes reutilizáveis, responsividade, acessibilidade
+            básica) e atenção à experiência do usuário. Nos projetos abaixo você encontra exemplos do meu processo:
+            organização, consistência visual e foco em resultado.
+          </p>
 
-  <div class="block">
-    <h3>PHP</h3>
-    <p>Adquiri conhecimentos em PHP por meio de cursos gratuitos e pratiquei criando um site próprio, o que me ajudou a entender melhor o funcionamento do backend na web.</p>
-  </div>
-
-  <div class="block">
-    <h3>Cybersecurity</h3>
-    <p>Tenho interesse sólido em Cybersecurity. Possuo conhecimentos iniciais, certificado pela Cisco Networking Academy, e continuo em busca de novas certificações e estudos na área.</p>
-  </div>
-
-  <div class="block">
-    <h3>CSS</h3>
-    <p>Aprendi CSS em paralelo ao HTML, utilizando vídeos e plataformas gratuitas. Tenho domínio de estrutura, responsividade e estilos visuais personalizados para interfaces.</p>
-  </div>
-
-  <div class="block">
-    <h3>JavaScript</h3>
-    <p>Em aprimoramento da linguagem, mas já entendo estruturas básicas como variáveis, funções, interações com HTML e estou evoluindo em lógicas voltadas à manipulação do DOM.</p>
-  </div>
-
-  <div class="block">
-    <h3>Lógica de Programação</h3>
-    <p>Estudo lógica de forma contínua para desenvolver minha base em programação. Já compreendo estruturas como condicionais, loops, arrays e funções aplicadas na prática.</p>
-  </div>
-</section>
-
-
-<DIV class="meusprojetostitulos" id="projetosmenu"><h1>MEUS PROJETOS</h1></DIV>
-
-<section class="imagemscroll">
-<div class="image-thumbnail-carousel">
-    <section class="image-display">
-        <div class="screen"></div>
+          <div class="socials">
+            <a class="icon instagram" href="https://www.instagram.com/felipelifa/" target="_blank" rel="noopener">
+              <i class="bi bi-instagram" aria-hidden="true"></i><span>Instagram</span>
+            </a>
+            <a class="icon whatsapp" href="https://wa.me/5535992436211" target="_blank" rel="noopener">
+              <i class="bi bi-whatsapp" aria-hidden="true"></i><span>WhatsApp</span>
+            </a>
+            <a class="icon linkedin" href="https://www.linkedin.com/in/felipe-lima1996" target="_blank" rel="noopener">
+              <i class="bi bi-linkedin" aria-hidden="true"></i><span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="thumbnail-carousel">
-        <button type="button" class="carousel__btn prev" aria-label="Previous slide">
-            <svg width="16" height="16" fill="currentColor" class="arrow-icon arrow-left-circle" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
-            </svg>
-        </button>
-        <ul class="carousel__slider">
-            <li class="carousel__slide">
-                <div class="thumbnail">
-                    <img loading="lazy" src="Arquivos/1.png" alt="">
-                       <div class="caption">
-      <h3>Site consultoria</h3>
-      <p>Site feito para um personal trainer, conversão para consultoria.</p>
-                  </div>
-            </li>
-            <li class="carousel__slide">
-                <div class="thumbnail">
-                    <img loading="lazy" src="Arquivos/2.png" alt="">
-                <div class="caption">
-      <h3>Site academia MundoFit</h3>
-      <p>Site feito para uma academia.</p>
-                  </div>
-            </li>
-            <li class="carousel__slide">
-                <div class="thumbnail">
-                    <img loading="lazy" src="Arquivos/3.png" alt="">
-                    <div class="caption">
-      <h3>Plataforma de treinamento</h3>
-      <p>Site feito para hospedar treinos para alunos.</p>
-                </div>
-            </li>
-            <li class="carousel__slide">
-                <div class="thumbnail">
-                    <img loading="lazy" src="Arquivos/4.png" alt="">
-                    <div class="caption">
-      <h3>Planilha automatizada</h3>
-      <p>Criação de um site com planilha automatizada de processos.</p>
-                </div>
-            </li>
-            <li class="carousel__slide">
-                <div class="thumbnail">
-                    <img loading="lazy" src="Arquivos/5.png" alt="">
-                <div class="caption">
-      <h3>Site DogCare</h3>
-      <p>Site feito para serviço de dogcare.</p>
-                </div>
-            </li>
-           
-        </ul>
-        <button type="button" class="carousel__btn next" aria-label="Next slide">
-            <svg width="16" height="16" fill="currentColor" class="arrow-icon arrow-right-circle" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
-            </svg>
-        </button>
+
+    <!-- ===== Skills ===== -->
+    <section id="skills" class="section container" aria-labelledby="skills-title">
+      <div class="section-title"><h2 id="skills-title">Minhas Skills</h2></div>
+      <div class="skills-grid" role="list">
+        <article class="block" role="listitem">
+          <h3>HTML</h3>
+          <p>Construção de páginas claras e bem estruturadas, com atenção à semântica e boas práticas de acessibilidade.</p>
+        </article>
+        <article class="block" role="listitem">
+          <h3>CSS</h3>
+          <p>Criação de layouts responsivos e modernos, aplicando design limpo e animações sutis para melhorar a experiência do usuário.</p>
+        </article>
+        <article class="block" role="listitem">
+          <h3>JavaScript</h3>
+          <p>Aplicação de lógica para interações dinâmicas, manipulação do DOM e integração com APIs em projetos práticos.</p>
+        </article>
+        <article class="block" role="listitem">
+          <h3>Design</h3>
+          <p>Organização visual de interfaces, uso de tipografia e cores de forma estratégica para transmitir clareza e profissionalismo.</p>
+        </article>
+        <article class="block" role="listitem">
+          <h3>PHP</h3>
+          <p>Experiência em aplicações simples de back-end e integração de formulários com foco em funcionamento estável.</p>
+        </article>
+        <article class="block" role="listitem">
+          <h3>Cybersecurity</h3>
+          <p>Conhecimento de fundamentos e boas práticas de segurança, com certificação introdutória da Cisco NetAcad.</p>
+        </article>
+      </div>
     </section>
-</div>
-  </div>
-</div>
-</section>
 
+    <!-- ===== Portfólio ===== -->
+    <section id="projetos" class="container" aria-labelledby="portfolio-title">
+      <h2 id="portfolio-title" class="section-title">Portfólio</h2>
 
+      <div class="portfolio-wrap">
+        <!-- Carrossel: apenas imagens -->
+        <div class="splide portfolio-splide" aria-label="Projetos de Felipe">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <!-- Slide 1 (exemplo) -->
+              <li class="splide__slide">
+                <img src="Arquivos/1.png" alt="Preview do Site de Consultoria" loading="lazy" />
+              </li>
+              <!-- Adicione outros <li class="splide__slide"> para novos projetos -->
+            </ul>
+          </div>
+        </div>
 
-  <footer class="meu-footer">
-  <div class="footer-conteudo">
-    <p>&copy; 2025 Felipe Lima. Todos os direitos reservados.</p>
-    <a href="#sobre" class="voltar-topo">Voltar ao topo ↑</a>
-  </div>
-</footer>
-<script src="js/script.js"></script>
+        <!-- Painel de detalhes dinâmico -->
+        <aside class="project-details" aria-live="polite">
+          <h3 id="pd-title">—</h3>
+          <p id="pd-desc">—</p>
+          <ul id="pd-tags" class="project-tags"></ul>
+          <div class="project-actions">
+            <a id="pd-demo" class="btn btn-sm" href="#" target="_blank" rel="noopener">
+              <i class="bi bi-box-arrow-up-right"></i> Demo
+            </a>
+            <a id="pd-code" class="btn btn-sm btn-secondary" href="#" target="_blank" rel="noopener">
+              <i class="bi bi-github"></i> Código
+            </a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===== Contato ===== -->
+    <section id="contato" class="section container" aria-labelledby="contato-title">
+      <div class="section-title"><h2 id="contato-title">Contato</h2></div>
+      <form class="contato-form" action="#" method="POST">
+        <div class="form-grid">
+          <label>
+            <span>Nome</span>
+            <input type="text" name="nome" required placeholder="Seu nome" />
+          </label>
+          <label>
+            <span>E-mail</span>
+            <input type="email" name="email" required placeholder="seu@email.com" />
+          </label>
+          <label class="full">
+            <span>Mensagem</span>
+            <textarea name="mensagem" rows="5" required placeholder="Como posso ajudar?"></textarea>
+          </label>
+        </div>
+        <button class="btn" type="submit">Enviar <i class="bi bi-send"></i></button>
+      </form>
+    </section>
+  </main>
+
+  <!-- ===== Rodapé ===== -->
+  <footer class="site-footer">
+    <div class="container footer-conteudo">
+      <p>&copy; 2025 Felipe Lima. Todos os direitos reservados.</p>
+      <a href="#inicio" class="voltar-topo">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <!-- JS: Splide + seu script (nessa ordem) -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="js/portfolio-carousel.js"></script>
 </body>
 </html>
