@@ -146,40 +146,138 @@
       </div>
     </section>
 
-    <!-- ===== Portfólio ===== -->
-    <section id="projetos" class="container" aria-labelledby="portfolio-title">
-      <h2 id="portfolio-title" class="section-title">Portfólio</h2>
+ <section id="projetos" class="container" aria-labelledby="portfolio-title">
+  <h2 id="portfolio-title" class="section-title">Portfólio</h2>
 
-      <div class="portfolio-wrap">
-        <!-- Carrossel: apenas imagens -->
-        <div class="splide portfolio-splide" aria-label="Projetos de Felipe">
-          <div class="splide__track">
-            <ul class="splide__list">
-              <!-- Slide 1 (exemplo) -->
-              <li class="splide__slide">
-                <img src="Arquivos/1.png" alt="Preview do Site de Consultoria" loading="lazy" />
-              </li>
-              <!-- Adicione outros <li class="splide__slide"> para novos projetos -->
-            </ul>
-          </div>
-        </div>
+  <div class="portfolio-wrap">
+    <div class="splide portfolio-splide" aria-label="Projetos de Felipe" style="min-width:0;">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <!-- Projeto 1 -->
+          <li class="splide__slide">
+            <a href="https://seusite.com/projeto-1" target="_blank" rel="noopener">
+              <img
+                src="Arquivos/Projetos/1.png"
+                alt="Site de Consultoria — preview"
+                loading="lazy" style="display:block; width:100%; height:auto;"
+              />
+            </a>
+          </li>
 
-        <!-- Painel de detalhes dinâmico -->
-        <aside class="project-details" aria-live="polite">
-          <h3 id="pd-title">—</h3>
-          <p id="pd-desc">—</p>
-          <ul id="pd-tags" class="project-tags"></ul>
-          <div class="project-actions">
-            <a id="pd-demo" class="btn btn-sm" href="#" target="_blank" rel="noopener">
-              <i class="bi bi-box-arrow-up-right"></i> Demo
+          <!-- Projeto 2 -->
+          <li class="splide__slide">
+            <a href="https://seusite.com/projeto-2" target="_blank" rel="noopener">
+              <img
+                src="Arquivos/Projetos/2.png"
+                alt="Academia MundoFit — preview"
+                loading="lazy" style="display:block; width:100%; height:auto;"
+              />
             </a>
-            <a id="pd-code" class="btn btn-sm btn-secondary" href="#" target="_blank" rel="noopener">
-              <i class="bi bi-github"></i> Código
+          </li>
+
+          <!-- Projeto 3 -->
+          <li class="splide__slide">
+            <a href="https://seusite.com/projeto-3" target="_blank" rel="noopener">
+              <img
+                src="Arquivos/Projetos/3.png"
+                alt="Plataforma de Treino — preview"
+                loading="lazy" style="display:block; width:100%; height:auto;"
+              />
             </a>
-          </div>
-        </aside>
+          </li>
+
+          <!-- Projeto 4 -->
+          <li class="splide__slide">
+            <a href="https://seusite.com/projeto-4" target="_blank" rel="noopener">
+              <img
+                src="Arquivos/Projetos/4.png"
+                alt="Planilha Automatizada — preview"
+                loading="lazy" style="display:block; width:100%; height:auto;"
+              />
+            </a>
+          </li>
+
+          <!-- Projeto 5 -->
+          <li class="splide__slide">
+            <a href="https://seusite.com/projeto-5" target="_blank" rel="noopener">
+              <img
+                src="Arquivos/Projetos/5.png"
+                alt="DogCare — preview"
+                loading="lazy" style="display:block; width:100%; height:auto;"
+              />
+            </a>
+          </li>
+        </ul>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
+<!-- Splide CSS/JS (deixe no <head> o CSS se já estiver lá) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+<!-- Init mínimo (inline para eliminar problemas de caminho/ordem) -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Garante que o carrossel existe
+    const root = document.querySelector('.portfolio-splide');
+    if (!root || typeof Splide === 'undefined') return;
+
+    // Dados de exemplo (sincronize a ordem com os <li> acima)
+    const projects = [
+      {
+        title: 'Site de Consultoria',
+        desc: ' focada em conversão com CTA claro e prova social.',
+        tags: ['HTML', 'CSS', 'UX'],
+        demo: '#',
+        code: '#',
+      },
+      // { title: 'Projeto 2', desc: 'Descrição...', tags: ['HTML','JS'], demo:'#', code:'#' }
+    ];
+
+    // Elementos do painel
+    const elTitle = document.getElementById('pd-title');
+    const elDesc  = document.getElementById('pd-desc');
+    const elTags  = document.getElementById('pd-tags');
+    const elDemo  = document.getElementById('pd-demo');
+    const elCode  = document.getElementById('pd-code');
+
+    function renderDetails(i){
+      const p = projects[i] || projects[0];
+      if (!p) return;
+      elTitle.textContent = p.title;
+      elDesc.textContent  = p.desc;
+      elTags.innerHTML = '';
+      (p.tags || []).forEach(t => {
+        const li = document.createElement('li');
+        li.textContent = t;
+        elTags.appendChild(li);
+      });
+      elDemo.href = p.demo || '#';
+      elCode.href = p.code || '#';
+    }
+
+    const splide = new Splide('.portfolio-splide', {
+      direction: 'ttb',     // vertical
+      height: '26rem',      // defina uma altura para aparecer!
+      wheel: true,
+      pagination: true,
+      arrows: true,
+      gap: '10px',
+      type: 'loop',
+      speed: 600,
+      keyboard: 'global',
+    });
+
+    splide.on('mounted', () => renderDetails(splide.index));
+    splide.on('move', (i) => renderDetails(i));
+
+    splide.mount();
+  });
+</script>
+
+
 
     <!-- ===== Contato ===== -->
     <section id="contato" class="section container" aria-labelledby="contato-title">
