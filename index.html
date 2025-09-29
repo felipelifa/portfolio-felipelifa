@@ -1,317 +1,467 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Felipe Lima — Programador</title>
-  <meta name="description" content="Portfólio de Felipe Lima: desenvolvimento web, design e cibersegurança." />
-  <meta property="og:title" content="Felipe Lima — Programador" />
-  <meta property="og:description" content="Portfólio de Felipe Lima: desenvolvimento web, design e cibersegurança." />
-  <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#111827" />
-
-  <!-- Fonts & Icons -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
-
-  <!-- Favicon -->
-  <link rel="icon" href="Arquivos/code.png" type="image/png" />
-
-  <!-- CSS externo -->
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://i.postimg.cc/9fqYVvxh/logo.png" type="image/x-icon">
 </head>
 <body>
-  <!-- ===== Cabeçalho / Navegação ===== -->
-  <header class="site-header">
-    <nav class="nav container" aria-label="Primária">
-      <a class="brand" href="#inicio" aria-label="Ir para o início">
-        <span class="brand-logo" aria-hidden="true">FL</span>
-        <span>Felipe Lima</span>
-      </a>
+    <main>
+        <aside class="sidebar " data-sidebar>
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img src="Arquivos/felipe.jpg" alt="avatar" width="80">
+                </figure>
 
-      <button class="menu-toggle" aria-expanded="false" aria-controls="menu-links">
-        <span class="bi bi-list" aria-hidden="true"></span>
-        <span class="sr-only">Abrir/fechar menu</span>
-      </button>
+                <div class="info-content">
+                    <h1 class="name" title="Richard Hanrick">Felipe Lima</h1>
+                    <p class="title">Web Developer</p>
+                </div>
 
-      <div id="menu-links" class="nav-links" role="menubar">
-        <a role="menuitem" href="#sobre">Sobre</a>
-        <a role="menuitem" href="#skills">Skills</a>
-        <a role="menuitem" href="#projetos">Projetos</a>
-        <a role="menuitem" href="#contato">Contato</a>
+                <button class="info-more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+            </div>
+
+            <div class="sidebar-info-more">
+                <div class="separator"></div>
+
+                <ul class="contacts-list">
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+
+                            <a href="mailto:richard@example.com" class="contact-link">felipe.delifa@gmail.com</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Phone</p>
+
+                            <a href="tel:+12133522795" class="contact-link">+55 (35) 992436211</a>
+                        </div>
+                    </li>
+
+                 
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+
+                            <address>Santa Rita do Sapucai, MG, BRASIL</address>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="separator"></div>
+
+                <ul class="social-list">
+                </ul>
+            </div>
+        </aside>
+
+        <div class="main-content">
+            <nav class="navbar">
+             <ul class="navbar-list">
+  <li class="navbar-item"><button class="navbar-link active" data-nav-link data-target="about">Sobre</button></li>
+  <li class="navbar-item"><button class="navbar-link" data-nav-link data-target="resume">Resume</button></li>
+  <li class="navbar-item"><button class="navbar-link" data-nav-link data-target="portfolio">Portfolio</button></li>
+  <li class="navbar-item"><button class="navbar-link" data-nav-link data-target="contact">Contato</button></li>
+</ul>
+
+            </nav>
+
+            <article class="about active" data-page="about">
+                <header>
+                    <h2 class="h2 article-title">Sobre mim</h2>
+                </header>
+
+              <section class="about-text">
+  <p>Atualmente curso Análise e Desenvolvimento de Sistemas e tenho me dedicado à programação e à cibersegurança. Meu objetivo é usar a tecnologia para criar soluções de problemas, oferecendo ferramentas digitais modernas, seguras e acessíveis.</p>
+</section>
+
+
+               <section class="service">
+  <h3 class="h3 service-title">O que eu faço</h3>
+
+  <ul class="service-list">
+    <li class="service-item">
+      <div class="service-icon-box">
+        <img src="https://i.postimg.cc/4389jZkP/icon-design.png" alt="icon" width="40">
       </div>
-      <div class="nav-cta">
-        <a class="btn" href="https://wa.me/5535992436211" target="_blank" rel="noopener">
-          Fale comigo <i class="bi bi-whatsapp" aria-hidden="true"></i>
-        </a>
+
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Web Development</h4>
+        <p class="service-item-text">
+          Desenvolvimento de sites modernos, responsivos e bem estruturados, com foco em performance e boas práticas.
+        </p>
       </div>
-    </nav>
+    </li>
+
+    <li class="service-item">
+      <div class="service-icon-box">
+        <img src="https://i.postimg.cc/ZqgqrqzG/icon-dev.png" alt="icon" width="40">
+      </div>
+
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Front-End Projects</h4>
+        <p class="service-item-text">
+          Criação de interfaces interativas e intuitivas, aplicando HTML, CSS e JavaScript em projetos reais.
+        </p>
+      </div>
+    </li>
+
+    <li class="service-item">
+      <div class="service-icon-box">
+        <img src="https://i.postimg.cc/0NL8zHpx/icon-photo.png" alt="icon" width="40">
+      </div>
+
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Cybersecurity Learning</h4>
+        <p class="service-item-text">
+          Estudo e prática de fundamentos em cibersegurança para aplicações seguras e proteção de dados.
+        </p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+
+                
+
+                <div class="modal-container " data-modal-container>
+                    <div class="overlay " data-overlay></div>
+
+                    <section class="testimonials-modal">
+                        <button class="modal-close-btn" data-modal-close-btn><ion-icon name="close-outline"></ion-icon></button>
+
+                        <div class="modal-img-wrapper">
+                            <figure class="modal-avatar-box">
+                                <img src="https://i.postimg.cc/zGDHfn3G/avatar-1.png" alt="Daniel Lewis" width="80" data-modal-img>
+                            </figure>
+
+                            <img src="https://i.postimg.cc/mZ00RwX7/icon-quote.png" alt="quote icon">
+                        </div>
+
+                        <div class="modal-content">
+                            <h4 class="h3 modal-title" data-modal-title>Daniel Lewis</h4>
+                            <time datetime="2023-06-14">14 June, 2023</time>
+
+                            <div class="modal-text" data-modal-text>
+                                <p>Richard was hired to create a corporate identity. It's modern, clean and with a beautiful design that got a lot of praises from colleagues and visitors. We were very pleased with the work done. He has a lot of experience and is very concerned about the needs of client.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                
+            </article>
+            
+          <article class="resume " data-page="resume">
+  <header>
+    <h2 class="h2 article-title">Resume</h2>
   </header>
 
-  <main id="inicio">
-    <!-- ===== Hero com Foto ===== -->
-    <section class="hero container" aria-labelledby="hero-title">
-      <div class="hero-grid hero-with-photo">
-        <div class="hero-left">
-          <h1 id="hero-title">
-            Conectando processos simples <span class="highlight">usando código</span> de forma inteligente
-          </h1>
-          <p class="subtitle">
-            Ex-treinador de Educação Física, estudando ADS. Transformo conhecimento em soluções digitais eficientes.
-          </p>
-          <div class="hero-actions">
-            <a class="btn" href="#projetos">Ver projetos <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
-            <a class="btn btn-secondary" href="#contato" aria-label="Ir para contato">Contato</a>
-          </div>
-          <div class="hero-badges">
-            <span class="badge"><i class="bi bi-patch-check" aria-hidden="true"></i> Disponível para estágio e freelance</span>
-          </div>
-        </div>
-
-        <aside class="hero-right" aria-label="Foto de Felipe">
-          <picture>
-            <!-- substitua pelos seus arquivos reais -->
-            <source srcset="Arquivos/felipe@2x.jpg 2x, Arquivos/felipe.jpg 1x" type="image/jpeg" />
-            <img class="hero-photo" src="Arquivos/felipe.png" alt="Retrato de Felipe Lima" width="400" height="520" />
-          </picture>
-        </aside>
-      </div>
-    </section>
-
-    <!-- ===== Sobre ===== -->
-    <section id="sobre" class="section container" aria-labelledby="sobre-title">
-      <div class="section-title"><h2 id="sobre-title">Sobre mim</h2></div>
-
-      <div class="sobre-grid">
-        <div class="sobre-texto">
-          <p>
-            Sou Felipe, desenvolvedor web focado em criar interfaces rápidas, acessíveis e fáceis de manter. Gosto de
-            soluções simples, código limpo e decisões guiadas por objetivo — do HTML semântico ao detalhe de microinteração
-            no CSS e no JavaScript.
-          </p>
-
-          <p>
-            Trabalho com boas práticas de front-end (estrutura clara, componentes reutilizáveis, responsividade, acessibilidade
-            básica) e atenção à experiência do usuário. Nos projetos abaixo você encontra exemplos do meu processo:
-            organização, consistência visual e foco em resultado.
-          </p>
-
-          <div class="socials">
-            <a class="icon instagram" href="https://www.instagram.com/felipelifa/" target="_blank" rel="noopener">
-              <i class="bi bi-instagram" aria-hidden="true"></i><span>Instagram</span>
-            </a>
-            <a class="icon whatsapp" href="https://wa.me/5535992436211" target="_blank" rel="noopener">
-              <i class="bi bi-whatsapp" aria-hidden="true"></i><span>WhatsApp</span>
-            </a>
-            <a class="icon linkedin" href="https://www.linkedin.com/in/felipe-lima1996" target="_blank" rel="noopener">
-              <i class="bi bi-linkedin" aria-hidden="true"></i><span>LinkedIn</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Skills ===== -->
-    <section id="skills" class="section container" aria-labelledby="skills-title">
-      <div class="section-title"><h2 id="skills-title">Minhas Skills</h2></div>
-      <div class="skills-grid" role="list">
-        <article class="block" role="listitem">
-          <h3>HTML</h3>
-          <p>Construção de páginas claras e bem estruturadas, com atenção à semântica e boas práticas de acessibilidade.</p>
-        </article>
-        <article class="block" role="listitem">
-          <h3>CSS</h3>
-          <p>Criação de layouts responsivos e modernos, aplicando design limpo e animações sutis para melhorar a experiência do usuário.</p>
-        </article>
-        <article class="block" role="listitem">
-          <h3>JavaScript</h3>
-          <p>Aplicação de lógica para interações dinâmicas, manipulação do DOM e integração com APIs em projetos práticos.</p>
-        </article>
-        <article class="block" role="listitem">
-          <h3>Design</h3>
-          <p>Organização visual de interfaces, uso de tipografia e cores de forma estratégica para transmitir clareza e profissionalismo.</p>
-        </article>
-        <article class="block" role="listitem">
-          <h3>PHP</h3>
-          <p>Experiência em aplicações simples de back-end e integração de formulários com foco em funcionamento estável.</p>
-        </article>
-        <article class="block" role="listitem">
-          <h3>Cybersecurity</h3>
-          <p>Conhecimento de fundamentos e boas práticas de segurança, com certificação introdutória da Cisco NetAcad.</p>
-        </article>
-      </div>
-    </section>
-
- <section id="projetos" class="container" aria-labelledby="portfolio-title">
-  <h2 id="portfolio-title" class="section-title">Portfólio</h2>
-
-  <div class="portfolio-wrap">
-    <div class="splide portfolio-splide" aria-label="Projetos de Felipe" style="min-width:0;">
-      <div class="splide__track">
-        <ul class="splide__list">
-          <!-- Projeto 1 -->
-          <li class="splide__slide">
-            <a href="https://seusite.com/projeto-1" target="_blank" rel="noopener">
-              <img
-                src="Arquivos/Projetos/1.png"
-                alt="Site de Consultoria — preview"
-                loading="lazy" style="display:block; width:100%; height:auto;"
-              />
-            </a>
-          </li>
-
-          <!-- Projeto 2 -->
-          <li class="splide__slide">
-            <a href="https://seusite.com/projeto-2" target="_blank" rel="noopener">
-              <img
-                src="Arquivos/Projetos/2.png"
-                alt="Academia MundoFit — preview"
-                loading="lazy" style="display:block; width:100%; height:auto;"
-              />
-            </a>
-          </li>
-
-          <!-- Projeto 3 -->
-          <li class="splide__slide">
-            <a href="https://seusite.com/projeto-3" target="_blank" rel="noopener">
-              <img
-                src="Arquivos/Projetos/3.png"
-                alt="Plataforma de Treino — preview"
-                loading="lazy" style="display:block; width:100%; height:auto;"
-              />
-            </a>
-          </li>
-
-          <!-- Projeto 4 -->
-          <li class="splide__slide">
-            <a href="https://seusite.com/projeto-4" target="_blank" rel="noopener">
-              <img
-                src="Arquivos/Projetos/4.png"
-                alt="Planilha Automatizada — preview"
-                loading="lazy" style="display:block; width:100%; height:auto;"
-              />
-            </a>
-          </li>
-
-          <!-- Projeto 5 -->
-          <li class="splide__slide">
-            <a href="https://seusite.com/projeto-5" target="_blank" rel="noopener">
-              <img
-                src="Arquivos/Projetos/5.png"
-                alt="DogCare — preview"
-                loading="lazy" style="display:block; width:100%; height:auto;"
-              />
-            </a>
-          </li>
-        </ul>
-      </div>
+  <section class="timeline">
+    <div class="title-wrapper">
+      <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+      <h3 class="h3">Educação</h3>
     </div>
+
+    <ol class="timeline-list">
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Análise e Desenvolvimento de Sistemas — Unitense</h4>
+        <span>2025 — Presente</span>
+        <p class="timeline-text">
+          Fundamentos de programação e estruturas de dados; desenvolvimento web (HTML5, CSS3, JavaScript),
+          bancos de dados (PostgreSQL), consumo de APIs REST, versionamento com Git/GitHub, redes e noções
+          de cibersegurança (modelos de ameaça, autenticação, boas práticas OWASP).
+        </p>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Formação complementar — Front-End & Security</h4>
+        <span>2024 — 2025</span>
+        <p class="timeline-text">
+          Responsividade e acessibilidade; UI/UX essentials; TypeScript básico; fundamentos de Angular e React;
+          integração com serviços (Firebase/Supabase); pipelines de build com Vite; publicação em Netlify/Vercel;
+          revisão de conceitos OWASP Top 10 aplicados a front-end.
+        </p>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Prática orientada a projetos</h4>
+        <span>2025</span>
+        <p class="timeline-text">
+          Portfólio pessoal e landing pages profissionais; single-page apps com roteamento;
+          formulários com validação; consumo de APIs públicas; integração com Telegram Bot;
+          organização de código (components, assets, módulos) e boas práticas de deploy.
+        </p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="timeline">
+    <div class="title-wrapper">
+      <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+      <h3 class="h3">Experiência</h3>
+    </div>
+
+    <ol class="timeline-list">
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Desenvolvedor Front-End — Projetos pessoais & freelas</h4>
+        <span>2025 — Presente</span>
+        <p class="timeline-text">
+          Criação de interfaces responsivas com foco em performance (Lighthouse), acessibilidade e SEO;
+          componentização, estados e formulários; integração com APIs; deploy contínuo (Netlify/Vercel) e
+          monitoramento básico de erros no console.
+        </p>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">SPA e Componentes — Angular / Vite</h4>
+        <span>2025</span>
+        <p class="timeline-text">
+          Estruturação de rotas, serviços e interceptors; comunicação HTTP; diretivas e pipes;
+          formulários reativos; organização por módulos; padrões para CSS (BEM/utility-first) e
+          boas práticas de estado local.
+        </p>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Back-End básico — FastAPI + PostgreSQL</h4>
+        <span>2025</span>
+        <p class="timeline-text">
+          APIs RESTful com documentação automática; CRUD com SQLAlchemy/SQLModel;
+          autenticação com JWT; validação com Pydantic; organização em camadas (routers, schemas, services)
+          e conexão com PostgreSQL para persistência.
+        </p>
+      </li>
+    </ol>
+  </section>
+</article>
+
+
+                <section class="skill">
+                    <h3 class="h3 skills-title">My Skills</h3>
+
+                    <ul class="skills-list content-card">
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Web Design</h5>
+                                <data value="80">80%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 80%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Graphic Design</h5>
+                                <data value="70">70%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 70%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Branding</h5>
+                                <data value="90">90%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 90%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">WordPress</h5>
+                                <data value="50">50%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 50%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+
+            <article class="portfolio " data-page="portfolio">
+                <header>
+                    <h2 class="h2 article-title">Portfolio</h2>
+                </header>
+
+                <section class="projects">
+                    <ul class="filter-list">
+                        <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+                        <li class="filter-item"><button data-filter-btn>Web Design</button></li>
+                        <li class="filter-item"><button data-filter-btn>Applications</button></li>
+                        <li class="filter-item"><button data-filter-btn>Web Development</button></li>
+                    </ul>
+
+                    <div class="filter-select-box">
+                        <button class="filter-select " data-select>
+                            <div class="select-value" data-select-value>Select Category</div>
+
+                            <div class="select-icon">
+                                <ion-icon name="chevron-down"></ion-icon>
+                            </div>
+                        </button>
+
+                        <ul class="select-list">
+                            <li class="select-item"><button data-select-item>All</button></li>
+                            <li class="select-item"><button data-select-item>Web Design</button></li>
+                            <li class="select-item"><button data-select-item>Applications</button></li>
+                            <li class="select-item"><button data-select-item>Web Development</button></li>
+                        </ul>
+                    </div>
+
+                    <ul class="project-list">
+                        <li class="project-item active" data-filter-item data-category="web development">
+                            <a href="https://guiaparaequipamentos.netlify.app/">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="Arquivos/Projetos/1.png" alt="Equipamentos" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Equipamentos Intelbras</h3>
+                                <p class="project-category">Web Development</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="web development">
+                            <a href="https://felipelimaconsultoria.netlify.app/">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="Arquivos/Projetos/2.png" alt="Consultoria Esportiva" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Consultoria Esportiva</h3>
+                                <p class="project-category">Web Development</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="applications">
+                            <a href="https://planilhadecorrida.netlify.app/">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="Arquivos/Projetos/3.png" alt="App Planilha Aeróbico" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">App Planilha Aeróbico</h3>
+                                <p class="project-category">Applications</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="applications">
+                            <a href="https://mundofit.netlify.app/">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="Arquivos/Projetos/4.png" alt="Academia" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Academia</h3>
+                                <p class="project-category">Web Developer</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="web design">
+                            <a href="https://dindinmagico.netlify.app/">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="Arquivos/Projetos/5.png" alt="App Financeiro" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">App Financeiro</h3>
+                                <p class="project-category">Applications</p>
+                            </a>
+                        </li>
+
+                        
+                </section>
+            </article>
+
+            
+
+            <article class="contact " data-page="contact">
+  <header>
+    <h2 class="h2 article-title">Contato</h2>
+  </header>
+
+  <section class="mapbox" data-mapbox>
+    <figure>
+      <iframe
+        src="https://www.google.com/maps?q=Santa%20Rita%20do%20Sapuca%C3%AD%2C%20Minas%20Gerais%2C%20Brasil&output=embed"
+        width="400"
+        height="300"
+        loading="lazy"
+        style="border:0"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </figure>
+  </section>
+
+ <section class="contact-form">
+  <h3 class="h3 form-title">Entrar em Contato</h3>
+
+  <div class="form">
+    <p class="form-input" style="border:none; background:transparent; box-shadow:none;">
+      Fale comigo diretamente pelo WhatsApp:
+    </p>
+
+    <a href="https://wa.me/5535992436211" target="_blank" class="form-btn" style="text-align:center; display:inline-flex; align-items:center; justify-content:center; gap:8px;">
+      <ion-icon name="logo-whatsapp"></ion-icon>
+      <span>Conversar no WhatsApp</span>
+    </a>
   </div>
 </section>
 
-<!-- Splide CSS/JS (deixe no <head> o CSS se já estiver lá) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+</article>
 
-<!-- Init mínimo (inline para eliminar problemas de caminho/ordem) -->
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    // Garante que o carrossel existe
-    const root = document.querySelector('.portfolio-splide');
-    if (!root || typeof Splide === 'undefined') return;
-
-    // Dados de exemplo (sincronize a ordem com os <li> acima)
-    const projects = [
-      {
-        title: 'Site de Consultoria',
-        desc: ' focada em conversão com CTA claro e prova social.',
-        tags: ['HTML', 'CSS', 'UX'],
-        demo: '#',
-        code: '#',
-      },
-      // { title: 'Projeto 2', desc: 'Descrição...', tags: ['HTML','JS'], demo:'#', code:'#' }
-    ];
-
-    // Elementos do painel
-    const elTitle = document.getElementById('pd-title');
-    const elDesc  = document.getElementById('pd-desc');
-    const elTags  = document.getElementById('pd-tags');
-    const elDemo  = document.getElementById('pd-demo');
-    const elCode  = document.getElementById('pd-code');
-
-    function renderDetails(i){
-      const p = projects[i] || projects[0];
-      if (!p) return;
-      elTitle.textContent = p.title;
-      elDesc.textContent  = p.desc;
-      elTags.innerHTML = '';
-      (p.tags || []).forEach(t => {
-        const li = document.createElement('li');
-        li.textContent = t;
-        elTags.appendChild(li);
-      });
-      elDemo.href = p.demo || '#';
-      elCode.href = p.code || '#';
-    }
-
-    const splide = new Splide('.portfolio-splide', {
-      direction: 'ttb',     // vertical
-      height: '26rem',      // defina uma altura para aparecer!
-      wheel: true,
-      pagination: true,
-      arrows: true,
-      gap: '10px',
-      type: 'loop',
-      speed: 600,
-      keyboard: 'global',
-    });
-
-    splide.on('mounted', () => renderDetails(splide.index));
-    splide.on('move', (i) => renderDetails(i));
-
-    splide.mount();
-  });
-</script>
-
-
-
-    <!-- ===== Contato ===== -->
-    <section id="contato" class="section container" aria-labelledby="contato-title">
-      <div class="section-title"><h2 id="contato-title">Contato</h2></div>
-      <form class="contato-form" action="#" method="POST">
-        <div class="form-grid">
-          <label>
-            <span>Nome</span>
-            <input type="text" name="nome" required placeholder="Seu nome" />
-          </label>
-          <label>
-            <span>E-mail</span>
-            <input type="email" name="email" required placeholder="seu@email.com" />
-          </label>
-          <label class="full">
-            <span>Mensagem</span>
-            <textarea name="mensagem" rows="5" required placeholder="Como posso ajudar?"></textarea>
-          </label>
         </div>
-        <button class="btn" type="submit">Enviar <i class="bi bi-send"></i></button>
-      </form>
-    </section>
-  </main>
+    </main>
 
-  <!-- ===== Rodapé ===== -->
-  <footer class="site-footer">
-    <div class="container footer-conteudo">
-      <p>&copy; 2025 Felipe Lima. Todos os direitos reservados.</p>
-      <a href="#inicio" class="voltar-topo">Voltar ao topo ↑</a>
-    </div>
-  </footer>
+    <script src="js/app.js"></script>
 
-  <!-- JS: Splide + seu script (nessa ordem) -->
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-  <script src="js/portfolio-carousel.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
